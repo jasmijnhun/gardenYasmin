@@ -1,4 +1,30 @@
 * {
 box-sizing:border-box;
+}
 
+body{
+margin:0;
+}
+
+.navigatie{
+    overflow: hidden;
+  background-color: #16320D;
+}
+
+.navigatie a{
+   float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigatie a:hover {
+  background-color: #8DAA70;
+  color: black;
+}
+.navigatie a.active {
+  background-color: #659A2B;
+  color: white;
 }
