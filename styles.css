@@ -11,6 +11,9 @@ margin:0;
     height:auto;
 }
 
+.upperimage img{
+  width: 100%;
+}
 
 
 /* Navigation Bar */
@@ -50,4 +53,13 @@ ul.navigatie li{
  display:inline;
 }
 
+/* Introductie */
+#introductie{
 
+  padding:0;
+  margin: 10px;
+  background-color: darkgreen;
+  border-radius: 25px;
+  width:100%;
+  height:20%;
+}
