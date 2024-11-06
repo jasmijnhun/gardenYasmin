@@ -11,6 +11,9 @@ margin:0;
   background-color: #16320D;
 }
 
+ul{
+ list-style-type: none;
+}
 .navigatie a{
    float: left;
   color: #f2f2f2;
