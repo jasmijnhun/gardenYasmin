@@ -9,6 +9,7 @@ margin:0;
 .upperimage{
     width: 100%;
     height:100px;
+    overflow:hidden;
 }
 
 .upperimage img{
