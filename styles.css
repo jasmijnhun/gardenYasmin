@@ -95,6 +95,7 @@ ul.navigatie li{
   border-radius:25px;
   border-style: solid;
   border-color: black;
+  overflow: hidden;
 }
 
 .photo1{
