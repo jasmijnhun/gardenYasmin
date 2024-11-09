@@ -14,10 +14,7 @@ margin:0;
 
 .upperimage img{
   width: 100%;
-   aspect-ratio: 20 / 3;
-  background-position: center 32.5%;
-  background-repeat: no-repeat;
-  background-size: cover
+   object-fit: cover;
 }
 
 
