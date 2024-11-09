@@ -8,7 +8,7 @@ margin:0;
 /*upper part of the website*/
 .upperimage{
     width: 100%;
-    height:auto;
+    height:50vh;
 }
 
 .upperimage img{
@@ -61,27 +61,29 @@ ul.navigatie li{
   background-color: darkgreen;
   border-radius: 25px;
   width:100%;
-  height:500vh;
+  height:200vh;
 }
 
 .vlak1{
-  margin: 10px;
+  margin-left: 20px;
   padding: 10px;
   background-color: gray;
   color: white;
   width: 45%;
   height: 80%;
   float:left;
+  border-radius:25px;
 }
 
 .vlak2{
-  margin: 10px;
+  margin-right: 20px;
   padding: 10px;
   background-color: gray;
   color: white;
   width: 45%;
   height: 80%;
   float:right;
+  border-radius:25px;
 }
 
 .photo1{
