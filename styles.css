@@ -4,6 +4,7 @@ box-sizing:border-box;
 
 body{
 margin:0;
+background-color: black;
 }
 /*upper part of the website*/
 .upperimage{
@@ -22,7 +23,7 @@ margin:0;
 
 .navigatie{
     overflow: hidden;
-  background-color: #112004;
+  background-color: #394D29;
 }
 
 ul{
@@ -43,11 +44,11 @@ ul{
 }
 
 .navigatie a:hover {
-  background-color: #9ebb80;
+  background-color: #7B9A43;
   color: black;
 }
 .navigatie a.active {
-  background-color: #abbf00;
+  background-color: #386C0A;
   color: white;
 }
 
@@ -71,7 +72,7 @@ ul.navigatie li{
   margin-top: 20px;
   margin-right:20px;
   padding: 10px;
-  background-color: #708d00;
+  background-color: #567D5A;
   color: white;
   width: 47%;
   height: 80%;
@@ -84,7 +85,7 @@ ul.navigatie li{
   margin-left:20px;
   margin-top:20px;
   padding: 10px;
-  background-color: #708d00;
+  background-color: #567D5A;
   color: white;
   width: 47%;
   height: 80%;
