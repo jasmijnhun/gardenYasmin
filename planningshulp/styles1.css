@@ -22,7 +22,7 @@
     
     .navigatie{
         overflow: hidden;
-      background-color: #16320D;
+      background-color: #112004;
     }
     
     ul{
@@ -43,11 +43,11 @@
     }
     
     .navigatie a:hover {
-      background-color: #8DAA70;
+      background-color: #9ebb80;
       color: black;
     }
     .navigatie a.active {
-      background-color: #659A2B;
+      background-color: #abbf00;
       color: white;
     }
     
