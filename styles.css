@@ -8,12 +8,12 @@ margin:0;
 /*upper part of the website*/
 .upperimage{
     width: 100%;
-    height:50vh;
+    height:100px;
 }
 
 .upperimage img{
   width: 100%;
-  height:50vh;
+  height:100%;
 }
 
 
