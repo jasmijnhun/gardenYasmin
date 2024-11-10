@@ -5,7 +5,8 @@ box-sizing:border-box;
 body{
 margin:0;
 background-color: black;
-}
+width: 100%;
+} 
 /*upper part of the website*/
 .upperimage{
     width: 100%;
@@ -63,8 +64,8 @@ ul.navigatie li{
   margin:10px;
   background-color: #467518;
   border-radius: 25px;
-  width:95%;
-  height:200vh;
+  width:98%;
+  height:120%;
 }
 
 .vlak1{
@@ -80,6 +81,7 @@ ul.navigatie li{
   border-radius:25px;
   border-style:solid;
   border-color:black;
+  
 }
 
 .vlak2{
