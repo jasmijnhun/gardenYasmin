@@ -115,5 +115,10 @@ ul.navigatie li{
   }
 
   /*calender */
-
+.calendar-container{
+  width: 20%;
+  background-color: black;
+  color: white;
+  border-color: white;
+}
  
