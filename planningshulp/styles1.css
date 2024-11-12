@@ -61,7 +61,7 @@
     #main-page{
       background-color: #226708e1;
       width: 97%;
-      height: auto;
+      height: min-content;
       margin: 20px; 
       display: inline-block;
       overflow:hidden;
@@ -73,17 +73,36 @@
     }
 
     /*Table decoration */
-    .first-table{
-      background-color: #4a4a49;
-      border-radius:30px;
-      width: 100%;
-      display: inline-block;
-      padding: 10px;
+.first-table{
+  background-color: #4a4a49;
+  border-radius:30px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  }
+.second-table{
+  background-color: #4a4a49;
+  border-radius:30px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
     }
+.third-table{
+  background-color: #4a4a49;
+  border-radius:30px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+}
 
-    h1{
-      color: white;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+h1{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+.gap{
+  background-color: transparent;
+  width: 100%;
+  height: 20px;
     }
 table{
   color:white;
@@ -120,4 +139,5 @@ table, td, tr, th{
 .oranje{
   background-color: orange;
 }
+
 
