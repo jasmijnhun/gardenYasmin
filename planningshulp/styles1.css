@@ -95,6 +95,53 @@
   padding: 10px;
 }
 
+.legend{
+  background-color: #4a4a49;
+  border-radius:30px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  height: 50px;
+}
+
+.gappie{
+  background-color: transparent;
+height: 20px;
+width: 100%;
+}
+.green{
+  background-color: green;
+  color: white;
+  position: absolute;
+  left: 10%;
+  width: 20%;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.yellow{
+  background-color: yellow;
+  color:black;
+  position: absolute;
+  left:40%;
+  width:20%;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.orange{
+  background-color: orange;
+  color: white;
+  position: absolute;
+  left: 70%;
+  width: 20%;
+  font-size: 18px;
+  height:30px;
+  line-height:30px;
+}
+
 h1{
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -158,21 +205,4 @@ background-color: rgb(190, 124, 0);
 }
 .first-row{
   pointer-events: none;
-}
-.groen .hiddentext{
-  visibility:hidden;
-  color: white;
-  font-size:0.4.rem;
-}
-.groen:hover .hiddentext{
-  visibility:visible;
-}
-
-.geel .hiddentext{
-  visibility: hidden;
-color:black;
-font-size: 0.7rem;
-}
-.geel:hover .hiddentext{
-  visibility:visible;
 }
