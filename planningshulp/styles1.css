@@ -140,4 +140,21 @@ table, td, tr, th{
   background-color: orange;
 }
 
-
+tr:hover{
+  background-color: grey;
+}
+tr .wit:hover{
+  background-color: grey;
+}
+tr .groen:hover{
+  background-color:rgb(1, 193, 1);
+}
+tr .geel:hover{
+  background-color: rgb(207, 207, 2);
+}
+tr .oranje:hover{
+background-color: rgb(190, 124, 0);
+}
+.first-row{
+  pointer-events: none;
+}
