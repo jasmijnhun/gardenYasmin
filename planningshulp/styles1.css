@@ -61,7 +61,7 @@
     #main-page{
       background-color: #226708e1;
       width: 97%;
-      height: 100%;
+      height: auto;
       margin: 20px; 
       display: inline-block;
       overflow:hidden;
@@ -71,7 +71,53 @@
       border-width: 5px;
       padding: 10px;
     }
+
+    /*Table decoration */
+    .first-table{
+      background-color: #4a4a49;
+      border-radius:30px;
+      width: 100%;
+      display: inline-block;
+      padding: 10px;
+    }
+
+    h1{
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 table{
   color:white;
-  
+    width:100%;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
+td{
+  width: 7%;
+  height: 25px;
+border: solid black 1px;
+}
+
+table, td, tr, th{
+  border-color:black;
+  border-style: solid;
+  border-width: 2px;
+  border-collapse: collapse;
+}
+.first-row{
+  border-bottom-color:black;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-collapse:collapse;
+}
+.wit{
+  background-color: #4a4a49;
+}
+.groen{
+  background-color: green;
+}
+.geel{
+  background-color: yellow;
+}
+.oranje{
+  background-color: orange;
+}
+
