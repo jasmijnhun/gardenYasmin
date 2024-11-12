@@ -111,7 +111,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 td{
   width: 7%;
-  height: 25px;
+  height: 35px;
 border: solid black 1px;
 }
 
@@ -148,6 +148,7 @@ tr .wit:hover{
 }
 tr .groen:hover{
   background-color:rgb(1, 193, 1);
+  
 }
 tr .geel:hover{
   background-color: rgb(207, 207, 2);
@@ -157,4 +158,21 @@ background-color: rgb(190, 124, 0);
 }
 .first-row{
   pointer-events: none;
+}
+.groen .hiddentext{
+  visibility:hidden;
+  color: white;
+  font-size:0.4.rem;
+}
+.groen:hover .hiddentext{
+  visibility:visible;
+}
+
+.geel .hiddentext{
+  visibility: hidden;
+color:black;
+font-size: 0.7rem;
+}
+.geel:hover .hiddentext{
+  visibility:visible;
 }
