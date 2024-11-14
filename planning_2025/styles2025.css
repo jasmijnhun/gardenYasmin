@@ -56,3 +56,27 @@
     ul.navigatie li{
      display:inline;
     }
+
+   /* planning */
+   .time-table{
+    background-color: #226708e1;
+      width: 97%;
+      height: min-content;
+      margin: 20px; 
+      display: inline-block;
+      overflow:hidden;
+      border-radius:30px;
+      border-style: solid;
+      border-color:#386C0A;
+      border-width: 5px;
+      padding: 10px;
+      
+     } 
+
+   table{
+    background-color: grey;
+    border-radius: 5px;
+    width: 90%;
+margin-left:auto;
+margin-right:auto;
+   }
