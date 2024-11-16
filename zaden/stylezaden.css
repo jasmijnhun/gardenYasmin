@@ -144,7 +144,7 @@
     }
     .title-container{
         text-align:center;
-        background-color: #386C0A;
+        background-color: #386C0Adf;
         border-radius:20px;
     }
     .buttons-container{
@@ -159,17 +159,18 @@
         align-items: center;
         width:30%;
         text-align:center;
-        background-color: #386C0A;  
+        background-color: #386c0adf;  
         padding:20px;
     }
     .zoeken{
         padding:20px;
-        background-color: #386C0A;
+        background-color: #386C0Adf;
         margin-top:10px;
         border-radius:20px;
     }
     .box h2{
         text-align:center;
+        color:white;
     }
 .selection1, .selection2, .selection3{
     display:block;
@@ -179,5 +180,32 @@
     .selection1a, .selection2a, .selection3a{
         display:flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
-    
+  .btn1{
+    width:70px;
+    height:50px;
+    margin:10px;
+    border-radius: 15px;
+    background-color: #254807;
+    border:black solid 2px;
+    color:white;
+    font-size:14px;
+   } 
+.btn1:hover{
+    transform: scale(1.1);
+}
+  .btn2{
+    width:100px;
+    height:50px;
+    font-size:40px;
+    margin: 10px;
+    border-radius:15px;
+    background-color:#254807;
+    border: black solid 2px;
+    color:white;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  
+  
