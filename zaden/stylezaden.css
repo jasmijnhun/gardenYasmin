@@ -270,34 +270,111 @@ display:inline-block;
 .groente{
     width: 30%;
     height:400px;
-    background-color: white;
+    background-color: #386C0A;
     border-radius: 30px;
     border: black 2px solid;
     margin: 10px;
+    position:relative;
+}
+.groente:hover{
+    transform: scale(1.1);
 }
 .kruiden{
     width: 30%;
     height:400px;
-    background-color: white;
+    background-color: #386C0A;
     border-radius: 30px;
     border: black 2px solid;
     margin: 10px;   
+    position: relative;
 }
 .bloemen{
     width: 30%;
     height:400px;
-    background-color: white;
+    background-color: #386C0A;
     border-radius: 30px;
     border: black 2px solid;
     margin: 10px;
+    position: relative;
 }
 .fruit{
     width: 30%;
     height:400px;
-    background-color: white;
+    background-color: #386C0A;
     border-radius: 30px;
     border: black 2px solid;
     margin: 10px;
+    position:relative;
+}
+.number{
+position:absolute;
+bottom: 50px;
+font-size: 15px;
+text-align: center;
+left:50%;
+font-family: Zilla Slab;
+display: none;
+}
+
+.groente img{
+    position:absolute;
+    top: 60px;
+    left: 25%;
+    width: 50%;
+    border: black 2px solid;
+    border-radius: 15px;
+    display: inline-block;
+    z-index:1;
+    
+    }
+.name{
+    font-size: 20px;
+    font-family: Zilla Slab;
+    font-weight:bold;
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+}    
+.soort{
+    font-size: 20px;
+    font-family: Zilla Slab;
+    font-weight:400;
+    top:25px;
+    display: inline-block;
+    text-align:center;
+    width: 80%;
+}
+.binnen-glas{
+    font-size: 20px;
+    font-family: Zilla Slab;
+    font-weight:400;
+   position:absolute;
+   z-index: 2;
+    width: 80%;
+    top:70%;
+    text-align: center;
+    left:10%;
+}
+.buiten{
+        font-size: 20px;
+        font-family: Zilla Slab;
+        font-weight:400;
+       position:absolute;
+       z-index: 3;
+        width: 80%;
+        top:80%;
+        left:10%;
+}
+.oogst{
+        font-size: 20px;
+        font-family: Zilla Slab;
+        font-weight:400;
+       position:absolute;
+       z-index: 4;
+        width: 80%;
+        top:90%;
+        left:10%;
 }
 
 
