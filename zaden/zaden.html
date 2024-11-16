@@ -40,35 +40,46 @@
         
   <div class="main-page">
     <div class ="main-container">
-      <div class="buttons-container">
+      <div class="under-container">
         <div class="title-container">
             <h1>Zadenbibliotheek</h1>
         </div>
-        <div class="selection1">
+        <div class="buttons-container">
+        <div class="selection1 box">
           <h2>Soort zaad</h2>
+          <div class="selection1a">
           <button id="groente"></button>
           <button id="fruit"></button>
           <button id="kruiden"></button>
           <button id="bloemen"></button>
+          </div>
         </div>
-        <div class="selection2">
+        <div class="selection2 box">
           <h2>Groentesoorten</h2>
-          <button id="bladgroenten"></button>
-          <button id="vruchtgroenten"></button>
-          <button id="knolgewassen"></button>
-          <button id="uien"></button>
-          <button id="stengelgewassen"></button>
-          <button id="peulvruchten"></button>
+          <div class="selection2a">
+          <button class="btn" id="bladgroenten"></button>
+          <button class="btn" id="vruchtgroenten"></button>
+          <button class="btn" id="knolgewassen"></button>
+          <button class="btn" id="uien"></button>
+          <button class="btn" id="stengelgewassen"></button>
+          <button class="btn" id="peulvruchten"></button>
+          </div>
         </div>
-        <div class="selection3">
+        <div class="selection3 box">
           <h2>Levensduur</h2>
+          <div class="selection3a">
           <button id="eenjarig"></button>
           <button id="tweejarig"></button>
           <button id="meerjarig"></button>
         </div>
+        </div>
+        </div>
+        <div class="zoek-container">
         <div class="zoeken">
           <h2>Zoeken</h2>
           <input type="text" id="myInput" oninput="filterFunction(id);" placeholder="Zoeken..." title="Search by seeds title"/>
+        </div>
+        </div>
         </div>
       </div>
      
