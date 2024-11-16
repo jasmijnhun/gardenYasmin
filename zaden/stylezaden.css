@@ -288,6 +288,9 @@ display:inline-block;
     margin: 10px;   
     position: relative;
 }
+.kruiden:hover{
+    transform: scale(1.1);
+}
 .bloemen{
     width: 30%;
     height:400px;
@@ -297,6 +300,9 @@ display:inline-block;
     margin: 10px;
     position: relative;
 }
+.bloemen:hover{
+    transform: scale(1.1);
+}
 .fruit{
     width: 30%;
     height:400px;
@@ -305,6 +311,9 @@ display:inline-block;
     border: black 2px solid;
     margin: 10px;
     position:relative;
+}
+.fruit:hover{
+    transform: scale(1.1);
 }
 .number{
 position:absolute;
@@ -325,8 +334,40 @@ display: none;
     border-radius: 15px;
     display: inline-block;
     z-index:1;
-    
     }
+
+    .kruiden img{
+        position:absolute;
+        top: 60px;
+        left: 25%;
+        width: 50%;
+        border: black 2px solid;
+        border-radius: 15px;
+        display: inline-block;
+        z-index:1;
+        }
+
+        .bloemen img{
+            position:absolute;
+            top: 60px;
+            left: 25%;
+            width: 50%;
+            border: black 2px solid;
+            border-radius: 15px;
+            display: inline-block;
+            z-index:1;
+            }
+            .fruit img{
+                position:absolute;
+                top: 60px;
+                left: 25%;
+                width: 50%;
+                border: black 2px solid;
+                border-radius: 15px;
+                display: inline-block;
+                z-index:1;
+                }
+
 .name{
     font-size: 20px;
     font-family: Zilla Slab;
