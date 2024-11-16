@@ -27,7 +27,7 @@
       background-color: #394D29;
     }
     
-    ul{
+    .headul{
      list-style-type: none;
         margin: 0;
         padding:0;
@@ -55,8 +55,8 @@
     }
     
     ul.navigatie li{
-     display:inline;
-    }
+        display:inline;
+       }
 
     /* search bar */
     .search {
@@ -252,7 +252,7 @@ background-color: transparent;
     padding: 0;
  }
 
- li{
+ .MyUL li{
 display:inline-block;
     justify-content: center;
 
@@ -275,8 +275,30 @@ display:inline-block;
     border: black 2px solid;
     margin: 10px;
 }
-
-
+.kruiden{
+    width: 30%;
+    height:400px;
+    background-color: white;
+    border-radius: 30px;
+    border: black 2px solid;
+    margin: 10px;   
+}
+.bloemen{
+    width: 30%;
+    height:400px;
+    background-color: white;
+    border-radius: 30px;
+    border: black 2px solid;
+    margin: 10px;
+}
+.fruit{
+    width: 30%;
+    height:400px;
+    background-color: white;
+    border-radius: 30px;
+    border: black 2px solid;
+    margin: 10px;
+}
 
 
 
