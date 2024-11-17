@@ -420,14 +420,9 @@ display: none;
 }
 
 
-.highlight{
-    border-color: red;
-    border-style: solid;
-    border-width: 5px;
-    
-   }
-
-
-.hidden{
-    display:none;
+.highlight {
+    background-color: #386C0A;  /* Lighter shade of green (lighter than #386C0A) */
+    border: 2px solid black;  /* Darker shade of green (darker than #386C0A) for border */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
