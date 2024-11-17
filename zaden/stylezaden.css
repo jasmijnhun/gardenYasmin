@@ -195,6 +195,10 @@
 .btn1:hover{
     transform: scale(1.1);
 }
+
+.btn1:active{
+    border:white solid 2px;
+}
   .btn2{
     width:100px;
     height:50px;
@@ -210,6 +214,9 @@
     transform: scale(1.1);
     }
   
+    .btn2:active{
+        border: white solid 2px;
+    }
   .btn3{
     width:90px;
     height:50px;
@@ -225,6 +232,9 @@
     transform: scale(1.1);
   }
 
+  .btn3:active{
+    border: white solid 2px;
+  }
  .zoeken h2{
     color:white;
     margin:10px;
@@ -316,6 +326,8 @@ display:inline-block;
 .fruit:hover{
     transform: scale(1.1);
 }
+
+
 .number{
 position:absolute;
 bottom: 50px;
