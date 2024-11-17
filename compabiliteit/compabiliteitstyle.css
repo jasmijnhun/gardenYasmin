@@ -57,4 +57,83 @@
      display:inline;
     }
 
+    /*container*/
+
+    .container{
+      background-color: #226708e1;
+      width: 97%;
+      height:200px;
+      margin: 20px; 
+      display: inline-block;
+      overflow:hidden;
+      border-radius:30px;
+      border-style: solid;
+      border-color:#386C0A;
+      border-width: 5px;
+      padding: 10px;
+    }
     
+    .companion-container{
+      background-color: #386C0A;
+      border-color:black;
+      border-style:solid;
+      border-width:2px;  
+      border-radius: 30px; 
+      padding: 10px 10px 20px 10px;
+
+    }
+
+    .trigger{
+      border-radius:50%;
+      width: 75px;
+      height:75px;
+      background-color: lightblue;
+      position:relative;
+      margin-left:50px;
+    }
+.trigger img{
+  width:50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.content{
+background-color: #f4f4f4;
+color: #333;
+padding: 20px;
+border-radius: 5px;
+display: none; /* Hidden by default */
+margin-top: 10px;
+transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+max-height: 0; /* Collapsed height */
+overflow: hidden;
+width: 200px; /* Larger width than the trigger */
+position: absolute;  /* Position content absolutely below the trigger */
+top: 100%;
+margin-left:-50px;
+}
+.content.open {
+  display: block;
+  max-height: 200px; /* Set a reasonable max-height */
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;  /* Add space between the two sections */
+  flex:1;
+}
+
+.section h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;  /* Remove bullet points */
+}
+
+ul li {
+  margin-bottom: 5px;  /* Add some space between list items */
+}

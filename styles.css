@@ -61,11 +61,14 @@ ul.navigatie li{
 #introductie{
 
   padding:0;
-  margin:10px;
-  background-color: #467518;
-  border-radius: 25px;
-  width:98%;
-  height:120%;
+  margin:20px;
+  background-color: #226708e1;
+  border-radius: 30px;
+  width:97%;
+  height:min-content;
+  overflow:hidden;
+  border: #386C0A solid 5px;
+  padding: 10px;
 }
 
 .vlak1{
@@ -73,7 +76,7 @@ ul.navigatie li{
   margin-top: 20px;
   margin-right:20px;
   padding: 10px;
-  background-color: #567D5A;
+  background-color: #386C0A;
   color: white;
   width: 47%;
   height: 80%;
@@ -89,7 +92,7 @@ ul.navigatie li{
   margin-left:20px;
   margin-top:20px;
   padding: 10px;
-  background-color: #567D5A;
+  background-color: #386C0A;
   color: white;
   width: 47%;
   height: 80%;
