@@ -5,8 +5,8 @@
     body{
     margin:0;
     background-color: black;
-    text-align: center;
-    }
+    width: 100%;
+    } 
     /*upper part of the website*/
     .upperimage{
         width: 100%;
@@ -45,45 +45,14 @@
     }
     
     .navigatie a:hover {
-      background-color: #9ebb80;
+      background-color: #7B9A43;
       color: black;
     }
     .navigatie a.active {
-      background-color: #abbf00;
+      background-color: #386C0A;
       color: white;
     }
     
     ul.navigatie li{
      display:inline;
     }
-
-   /* planning */
-   .time-table{
-    background-color: #226708e1;
-      width: 97%;
-      height: min-content;
-      margin: 20px; 
-      display: inline-block;
-      overflow:hidden;
-      border-radius:30px;
-      border-style: solid;
-      border-color:#386C0A;
-      border-width: 5px;
-      padding: 10px;
-      
-     } 
-
-   table{
-    background-color: grey;
-    border-radius: 5px;
-    width: 90%;
-margin-left:auto;
-margin-right:auto;
-   }
-   
-
-   .highlight{
-    border-color: red;
-    border-style: solid;
-    border-width: 5px;
-   }
