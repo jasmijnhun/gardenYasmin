@@ -62,7 +62,7 @@
     .container{
       background-color: #226708e1;
       width: 97%;
-      height:200px;
+      height:min-content;
       margin: 20px; 
       display: inline-block;
       overflow:hidden;
@@ -80,19 +80,19 @@
       border-width:2px;  
       border-radius: 30px; 
       padding: 10px 10px 20px 10px;
-
+      height: 500px;
     }
 
     .trigger{
       border-radius:50%;
-      width: 75px;
-      height:75px;
+      width: 100px;
+      height:100px;
       background-color: lightblue;
       position:relative;
-      margin-left:50px;
+      margin-left:100px;
     }
 .trigger img{
-  width:50px;
+  width:80px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -109,15 +109,22 @@ margin-top: 10px;
 transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 max-height: 0; /* Collapsed height */
 overflow: hidden;
-width: 200px; /* Larger width than the trigger */
+width: 300px; /* Larger width than the trigger */
 position: absolute;  /* Position content absolutely below the trigger */
 top: 100%;
-margin-left:-50px;
+margin-left:-100px;
 }
+
 .content.open {
-  display: block;
+  display: grid;
   max-height: 200px; /* Set a reasonable max-height */
   padding: 20px;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-gap: 20px;
+}
+
+.content {
+  gap: 20px; /* Add some space between the sections */
 }
 
 .section {
@@ -126,8 +133,11 @@ margin-left:-50px;
 }
 
 .section h4 {
-  font-size: 1.2em;
+  font-size: 14px;
   margin-bottom: 10px;
+}
+.section li{
+  font-size:10px;
 }
 
 ul {
