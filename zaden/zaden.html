@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-  <script src="./scriptzaden.js"></script>
+  
 </head>
 <body>
         <header>
@@ -43,36 +43,36 @@
         <div class="selection1 box">
           <h2>Soort zaad</h2>
           <div class="selection1a">
-          <button class="btn1" id="groente">Groente</button>
-          <button class="btn1" id="fruit">Fruit</button>
-          <button class="btn1" id="kruiden">Kruiden</button>
-          <button class="btn1" id="bloemen">Bloemen</button>
+          <button class="btn1" id="groente" onclick="selectCategory('groente')">Groente</button>
+          <button class="btn1" id="fruit" onclick="selectCategory('fruit')">Fruit</button>
+          <button class="btn1" id="kruiden" onclick="selectCategory('kruiden')">Kruiden</button>
+          <button class="btn1" id="bloemen" onclick="selectCategory('bloemen')">Bloemen</button>
           </div>
         </div>
         <div class="selection2 box">
           <h2>Groentesoorten</h2>
           <div class="selection2a">
-          <button class="btn2" id="bladgroenten">Blad-groenten</button>
-          <button class="btn2" id="vruchtgroenten">Vrucht-groenten</button>
-          <button class="btn2" id="knolgewassen">Knol-gewassen</button>
-          <button class="btn2" id="uien">Uien</button>
-          <button class="btn2" id="stengelgewassen">Stengel-gewassen</button>
-          <button class="btn2" id="peulvruchten">Peul-vruchten</button>
+          <button class="btn2" id="bladgroenten" onclick="selectCategory('bladgroenten')">Blad-groenten</button>
+          <button class="btn2" id="vruchtgroenten" onclick="selectCategory('vruchtgroenten')">Vrucht-groenten</button>
+          <button class="btn2" id="knolgewassen" onclick="selectCategory('knolgewassen')">Knol-gewassen</button>
+          <button class="btn2" id="uien" onclick="selectCategory('uien')">Uien</button>
+          <button class="btn2" id="stengelgewassen" onclick="selectCategory('stengelgewassen')" >Stengel-gewassen</button>
+          <button class="btn2" id="peulvruchten" onclick="selectCategory('peulvruchten')">Peul-vruchten</button>
           </div>
         </div>
         <div class="selection3 box">
           <h2>Levensduur</h2>
           <div class="selection3a">
-          <button class="btn3" id="eenjarig">Eenjarig</button>
-          <button class="btn3" id="tweejarig">Tweejarig</button>
-          <button class="btn3" id="meerjarig">Meerjarig</button>
+          <button class="btn3" id="eenjarig" onclick="selectCategory('eenjarig')">Eenjarig</button>
+          <button class="btn3" id="tweejarig" onclick="selectCategory('tweejarig')">Tweejarig</button>
+          <button class="btn3" id="meerjarig" onclick="selectCategory('meerjarig')">Meerjarig</button>
         </div>
         </div>
         </div>
         <div class="zoek-container">
         <div class="zoeken">
           <h2>Zoeken</h2>
-          <input type="text" id="myInput" oninput="filterFunction(id);" placeholder="Zoeken op naam" title="Search by seeds title"/>
+          <input type="text" id="searchInput"  placeholder="Zoeken op naam" title="Search by seeds title" onkeyup="searchPage()"/>
         </div>
         </div>
       </div>
@@ -1131,7 +1131,7 @@
           <div class="number">#105</div>
           <div class="name">Pampas gras</div>
           <div class="soort">Roze</div>
-          <img src="">
+          <img src="../zaden/pictures/pinkpampasgras.jpg">
           <div class="binnen-glas">Binnen zaaien: Maart t/m Mei</div>
           <div class="buiten">Buiten zaaien: NIET</div>
           <div class="oogst">Bloei: van September t/m Oktober</div>
@@ -1143,7 +1143,7 @@
           <div class="number">#106</div>
           <div class="name">Campanula</div>
           <div class="soort">Dubbelbloemig</div>
-          <img src="">
+          <img src="../zaden/pictures/campanulamix.jpg">
           <div class="binnen-glas">Binnen zaaien: van Maart t/m April</div>
           <div class="buiten">Buiten zaaien: van Mei t/m Juli</div>
           <div class="oogst">Bloei: van Mei t/m Juli</div>
@@ -1152,7 +1152,7 @@
           <div class="number">#107</div>
           <div class="name">Zinnia</div>
           <div class="soort">Mix</div>
-          <img src="">
+          <img src="../zaden/pictures/zinnia.jpg">
           <div class="binnen-glas">Binnen zaaien: in April</div>
           <div class="buiten">Buiten zaaien: in Mei</div>
           <div class="oogst">Bloei: van Juni t/m Oktober</div>
@@ -1161,7 +1161,7 @@
           <div class="number">#108</div>
           <div class="name">Sweet William</div>
           <div class="soort">Mix</div>
-          <img src="">
+          <img src="../zaden/pictures/sweetwilliam.jpg">
           <div class="binnen-glas">Binnen zaaien: NIET</div>
           <div class="buiten">Buiten zaaien: van April t/m Juni</div>
           <div class="oogst">Bloei: van Juni t/m Augustus</div>
@@ -1172,7 +1172,7 @@
           <div class="number">#109</div>
           <div class="name">Leeuwenbek</div>
           <div class="soort">Dwerg mix </div>
-          <img src="">
+          <img src="../zaden/pictures/dwergleeuwenbek.jpg">
           <div class="binnen-glas">Binnen zaaien: in Maart</div>
           <div class="buiten">Buiten zaaien: NIET</div>
           <div class="oogst">Bloei: Juni t/m September</div>
@@ -1181,7 +1181,7 @@
           <div class="number">#110</div>
           <div class="name">Zonnebloem</div>
           <div class="soort">Normaal</div>
-          <img src="">
+          <img src="../zaden/pictures/zonnebloem.jpg">
           <div class="binnen-glas">Binnen zaaien: NIET</div>
           <div class="buiten">Buiten zaaien: April t/m Juni</div>
           <div class="oogst">Bloei: Juli t/m Oktober</div>
@@ -1190,7 +1190,7 @@
           <div class="number">#111</div>
           <div class="name">Lavendel</div>
           <div class="soort">Normaal</div>
-          <img src="">
+          <img src="../zaden/pictures/lavendal.jpg">
           <div class="binnen-glas">Binnen zaaien: van Maart t/m Juni</div>
           <div class="buiten">Buiten zaaien: Van Maart t/m Juni</div>
           <div class="oogst">Bloei: van Juli t/m September</div>
@@ -1202,7 +1202,7 @@
           <div class="number">#112</div>
           <div class="name">Goudsbloem</div>
           <div class="soort">Ball's orange, dubbelbloemig</div>
-          <img src="">
+          <img src="../zaden/pictures/goudsbloemballsorange.jpg">
           <div class="binnen-glas">Binnen zaaien: NIET</div>
           <div class="buiten">Buiten zaaien: van Maart t/m Mei</div>
           <div class="oogst">Bloei: van Juni t/m Oktober</div>
@@ -1211,7 +1211,7 @@
           <div class="number">#113</div>
           <div class="name">Pluimhanenkam</div>
           <div class="soort">Hoog</div>
-          <img src="">  
+          <img src="../zaden/pictures/pluimhanenkam.jpeg">  
           <div class="binnen-glas">Binnen zaaien: van Maart t/m April</div>
           <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
           <div class="oogst">Bloei: van Juli t/m September</div>
@@ -1220,7 +1220,7 @@
           <div class="number">#114</div>
           <div class="name">Pronkwinde</div>
           <div class="soort">Heavenly Blue</div>
-          <img src="">
+          <img src="../zaden/pictures/pronkwindeheavenlyblue.jpg">
           <div class="binnen-glas">Binnen zaaien:van Maart t/m Mei</div>
           <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
           <div class="oogst">Bloei: van Juli t/m September</div>
@@ -1232,7 +1232,7 @@
           <div class="number">#115</div>
           <div class="name">Stokroos</div>
           <div class="soort">Summer Carnival</div>
-          <img src="">
+          <img src="../zaden/pictures/stokroossummer.jpg">
           <div class="binnen-glas">Binnen zaaien: van Maart t/m April</div>
           <div class="buiten">Buiten zaaien: van April t/m Mei</div>
           <div class="oogst">Bloei: van Juli t/m September</div>
@@ -1241,7 +1241,7 @@
           <div class="number">#116</div>
           <div class="name">Lobelia</div>
           <div class="soort">Cascade mix</div>
-          <img src="">
+          <img src="../zaden/pictures/lobelia.jpg">
           <div class="binnen-glas">Binnen zaaien: van Februari t/m Maart</div>
           <div class="buiten">Buiten zaaien: NIET</div>
           <div class="oogst">Bloei: van Juni t/m Oktober</div>
@@ -1250,7 +1250,7 @@
           <div class="number">#117</div>
           <div class="name">Petunia</div>
           <div class="soort">Kort hangende Mix</div>
-          <img src="">
+          <img src="../zaden/pictures/hangpetunia.jpeg">
           <div class="binnen-glas">Binnen zaaien: van Maart t/m Mei</div>
           <div class="buiten">Buiten zaaien: NIET</div>
           <div class="oogst">Bloei: van Juni t/m September</div>
@@ -1261,7 +1261,7 @@
           <div class="number">#118</div>
           <div class="name">Stokroos</div>
           <div class="soort">Zwart Enkelbloemig</div>
-          <img src="">
+          <img src="../zaden/pictures/stokrooszwart.jpg">
           <div class="binnen-glas">Binnen zaaien: NIET</div>
           <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
           <div class="oogst">Bloei: van Juni t/m Augustus</div>
@@ -1270,7 +1270,7 @@
           <div class="number">#119</div>
           <div class="name">Afrikaantje</div>
           <div class="soort">Mary Helen</div>
-          <img src="">
+          <img src="../zaden/pictures/afrikaantjemaryhelen.jpg">
           <div class="binnen-glas">Binnen zaaien: in April</div>
           <div class="buiten">Buiten zaaien: in Mei</div>
           <div class="oogst">Bloei: van Juni t/m Oktober</div>
@@ -1279,7 +1279,7 @@
           <div class="number">#120</div>
           <div class="name">Petunia</div>
           <div class="soort">Laag mix</div>
-          <img src="">
+          <img src="../zaden/pictures/petuniamixed.jpg">
           <div class="binnen-glas">Binnen zaaien: van Maart t/m Mei</div>
           <div class="buiten">Buiten zaaien: NIET</div>
           <div class="oogst">Bloei: van Juni t/m September</div>
@@ -1291,7 +1291,7 @@
           <div class="number">#121</div>
           <div class="name">Vijgenblad</div>
           <div class="soort">Stokroos</div>
-          <img src="">
+          <img src="../zaden/pictures/vijgenblad.jpg">
           <div class="binnen-glas">Binnen zaaien: NIET</div>
           <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
           <div class="oogst">Bloei: van Juni t/m Augustus</div>
@@ -1300,7 +1300,7 @@
           <div class="number">#122</div>
           <div class="name">Kamille</div>
           <div class="soort">Normaal</div>
-          <img src="">
+          <img src="../zaden/pictures/kamille.jpg">
           <div class="binnen-glas">Binnen zaaien: NIET</div>
           <div class="buiten">Buiten zaaien: van April t/m Juni</div>
           <div class="oogst">Bloei: van Juli t/m Augustus</div>
@@ -1309,7 +1309,7 @@
           <div class="number">#123</div>
           <div class="name">Viool</div>
           <div class="soort">Zwiterse Reuzen Mix</div>
-          <img src="">
+          <img src="../zaden/pictures/vioolzwiters.jpeg">
           <div class="binnen-glas">Binnen zaaien: van Maart t/m Mei</div>
           <div class="buiten">Buiten zaaien: van April t/m Mei</div>
           <div class="oogst">Bloei: van Juli t/m September</div>
@@ -1321,7 +1321,7 @@
           <div class="number">#124</div>
           <div class="name">Korenbloem</div>
           <div class="soort">Mix</div>
-          <img src="">
+          <img src="../zaden/pictures/korenbloem.jpg">
           <div class="binnen-glas">Binnen zaaien: NIET</div>
           <div class="buiten">Buiten zaaien: van Maart t/m Mei</div>
           <div class="oogst">Bloei: van Juni t/m September </div>
@@ -1330,19 +1330,172 @@
           <div class="number">#125</div>
           <div class="name">Passiebloem</div>
           <div class="soort">Normaal</div>
-          <img src="">
+          <img src="../zaden/pictures/passiebloem.jpg">
           <div class="binnen-glas">Binnen zaaien: van Maart t/m Mei</div>
           <div class="buiten">Buiten zaaien: NIET</div>
           <div class="oogst">Bloei: van Juni t/m September</div>
         </li>
-        
-        <!--bloemen-->
+        <li class="bloemen eenjarig">
+          <div class="number">#126</div>
+          <div class="name">Dagschone</div>
+          <div class="soort">Dwerg mix </div>
+          <img src="../zaden/pictures/dagschonemix.jpg">
+          <div class="binnen-glas">Binnen zaaien: NIET</div>
+          <div class="buiten">Buiten zaaien: van April t/m Juni</div>
+          <div class="oogst">Bloei: van Juni t/m September</div>
+        </li>
+
+
+
+        <li class="bloemen eenjarig">
+          <div class="number">#127</div>
+          <div class="name">Klaproos</div>
+          <div class="soort">Normaal</div>
+          <img src="../zaden/pictures/klaproos.jpg">
+          <div class="binnen-glas">Binnen zaaien: NIET</div>
+          <div class="buiten">Buiten zaaien: van April t/m Juni</div>
+          <div class="oogst">Bloei: van Juni t/m Augustus</div>
+        </li>
+        <li class="bloemen eenjarig">
+          <div class="number">#128</div>
+          <div class="name">Viooltje</div>
+          <div class="soort">Mix</div>
+          <img src="../zaden/pictures/viooltje.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Januari t/m Maart</div>
+          <div class="buiten">Buiten zaaien: van Maart t/m Juli</div>
+          <div class="oogst">Bloei: van Oktober t/m April</div>
+        </li>
+        <li class="bloemen eenjarig">
+          <div class="number">#129</div>
+          <div class="name">Reuzenzonnebloem</div>
+          <div class="soort">Giganteus</div>
+          <img src="../zaden/pictures/reuzenzonnebloem.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Maart t/m April</div>
+          <div class="buiten">Buiten zaaien: van April t/m Juni</div>
+          <div class="oogst">Bloei: van Juli t/m Oktober</div>
+        </li>
+
+
+        <li class="bloemen eenjarig">
+          <div class="number">#130</div>
+          <div class="name">Cosmos</div>
+          <div class="soort">Mix</div>
+          <img src="../zaden/pictures/cosmosmix.jpeg">
+          <div class="binnen-glas">Binnen zaaien: NIET</div>
+          <div class="buiten">Buiten zaaien: van April t/m Juni</div>
+          <div class="oogst">Bloei: van Juni t/m Oktober</div>
+        </li>
+        <li class="bloemen eenjarig">
+          <div class="number">#131</div>
+          <div class="name">Zonnebloem</div>
+          <div class="soort">Dwerg</div>
+          <img src="../zaden/pictures/dwergzonnebloem.jpeg">
+          <div class="binnen-glas">Binnen zaaien: NIET</div>
+          <div class="buiten">Buiten zaaien: van Maart t/m Juni</div>
+          <div class="oogst">Bloei: van Juni t/m Oktober</div>
+        </li>
+        <li class="bloemen eenjarig">
+          <div class="number">#132</div>
+          <div class="name">Oost-indische kers</div>
+          <div class="soort">Dwerg mix</div>
+          <img src="../zaden/pictures/oostindischekers.jpeg">
+          <div class="binnen-glas">Binnen zaaien: NIET</div>
+          <div class="buiten">Buiten zaaien: van April t/m Mei</div>
+          <div class="oogst">Bloei: van Juli t/m Oktober</div>
+        </li>
+
+
+        <li class="bloemen eenjarig">
+          <div class="number">#133</div>
+          <div class="name">Afrikaantje</div>
+          <div class="soort">Hawaii, Hoog dubble oranje</div>
+          <img src="../zaden/pictures/afrikaantjehawai.jpg">
+          <div class="binnen-glas">Binnen zaaien: van April t/m Mei</div>
+          <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
+          <div class="oogst">Bloei: van Juli t/m Oktober</div>
+        </li>
+        <li class="bloemen eenjarig">
+          <div class="number">#134</div>
+          <div class="name">Pronkwinde</div>
+          <div class="soort">Flying Saucers</div>
+          <img src="../zaden/pictures/pronkwindeflyingsaucers.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Maart t/m Mei</div>
+          <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
+          <div class="oogst">Bloei: van Juli t/m September</div>
+        </li>
+        <li class="bloemen tweejarig">
+          <div class="number">#135</div>
+          <div class="name">Stokroos</div>
+          <div class="soort">Chater's Mix</div>
+          <img src="../zaden/pictures/stokrooschater.jpg">
+          <div class="binnen-glas">Binnen zaaien: NIET</div>
+          <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
+          <div class="oogst">Bloei: van Juni t/m Augustus</div>
+        </li>
+
+
+        <li class="bloemen eenjarig">
+          <div class="number">#136</div>
+          <div class="name">Afrikaantjes</div>
+          <div class="soort">Orange Flame</div>
+          <img src="../zaden/pictures/afrikaantjeorangeflame.jpg">
+          <div class="binnen-glas">Binnen zaaien: van April t/m Mei</div>
+          <div class="buiten">Buiten zaaien: van Mei t/m Juni</div>
+          <div class="oogst">Bloei: van Juli t/m Oktober</div>
+        </li>
+        <li class="bloemen eenjarig">
+          <div class="number">#137</div>
+          <div class="name">Leeuwenbek</div>
+          <div class="soort">Rainbow mix</div>
+          <img src="../zaden/pictures/leeuwenbekrainbow.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Februari t/m April</div>
+          <div class="buiten">Buiten zaaien: van April t/m Mei</div>
+          <div class="oogst">Bloei: van Juni t/m September</div>
+        </li>
+        <li class="groente vruchtgroenten eenjarig">
+          <div class="number">#138</div>
+          <div class="name">Madame Jeanette</div>
+          <div class="soort">Geel</div>
+          <img src="../zaden/pictures/madamejeanette.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Januari t/m April</div>
+          <div class="buiten">Buiten zaaien: NIET</div>
+          <div class="oogst">Oogst: van Juli t/m Oktober</div>
+        </li>
+
+
+        <li class="groente vruchtgroenten eenjarig">
+          <div class="number">#139</div>
+          <div class="name">Ghost Pepper</div>
+          <div class="soort">Chocolate</div>
+          <img src="../zaden/pictures/ghostpepperchocolate.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Januari t/m April</div>
+          <div class="buiten">Buiten zaaien: NIET</div>
+          <div class="oogst">Oogst: van Juli t/m Oktober</div>
+        </li>
+        <li class="groente vruchtgroenten eenjarig">
+          <div class="number">#140</div>
+          <div class="name">Jigsaw</div>
+          <div class="soort">Normaal</div>
+          <img src="../zaden/pictures/jigsaw.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Januari t/m April</div>
+          <div class="buiten">Buiten zaaien: NIET</div>
+          <div class="oogst">Oogst: van Juli t/m Oktober</div>
+        </li>
+        <li class="groente vruchtgroenten eenjarig">
+          <div class="number">#141</div>
+          <div class="name">King Naga</div>
+          <div class="soort">Normaal</div>
+          <img src="../zaden/pictures/kingnaga.jpg">
+          <div class="binnen-glas">Binnen zaaien: van Januari t/m April</div>
+          <div class="buiten">Buiten zaaien: NIET</div>
+          <div class="oogst">Oogst: van Juli t/m </div>
+        </li>
       </ul>
     </div>
 
  
   </div>
-
+  <script src="../zaden/scriptzaden.js"></script>
         
         </body>
         </html>

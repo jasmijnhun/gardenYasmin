@@ -208,7 +208,7 @@
   }
   .btn2:hover{
     transform: scale(1.1);
-  }
+    }
   
   .btn3{
     width:90px;
@@ -265,6 +265,7 @@ display:inline-block;
     border: black 2px solid;
     border-radius: 30px;
     display: inline-block;
+    width: 100%;
 }
 
 .groente{
@@ -419,6 +420,14 @@ display: none;
 }
 
 
+.highlight{
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    
+   }
 
 
-
+.hidden{
+    display:none;
+}
