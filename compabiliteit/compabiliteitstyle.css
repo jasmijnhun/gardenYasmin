@@ -27,7 +27,7 @@
       background-color: #394D29;
     }
     
-    ul{
+    .navigatie ul{
      list-style-type: none;
         margin: 0;
         padding:0;
@@ -80,31 +80,49 @@
       border-width:2px;  
       border-radius: 30px; 
       padding: 10px 10px 20px 10px;
-      height: 500px;
+      height: min-content;
+      flex-direction: column;
+      overflow: hidden;
+      
     }
+
+.container-trigger{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  padding-left:0;
+  flex-direction: column;
+  
+  }
 
     .trigger{
       border-radius:50%;
       width: 100px;
       height:100px;
-      background-color: lightblue;
+      background-color: #00a6dc;
       position:relative;
       margin-left:100px;
+      gap:20px;
     }
+
+
 .trigger img{
   width:80px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
+.trigger:hover{
+  background-color: #026a8d;
+}
+
+
 .content{
-background-color: #f4f4f4;
 color: #333;
 padding: 20px;
 border-radius: 5px;
-display: none; /* Hidden by default */
+display: none; 
 margin-top: 10px;
 transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 max-height: 0; /* Collapsed height */
@@ -113,37 +131,44 @@ width: 300px; /* Larger width than the trigger */
 position: absolute;  /* Position content absolutely below the trigger */
 top: 100%;
 margin-left:-100px;
+
 }
 
 .content.open {
   display: grid;
   max-height: 200px; /* Set a reasonable max-height */
-  padding: 20px;
+  padding: 10px;
   grid-template-columns: 1fr 1fr; /* Two equal-width columns */
     grid-gap: 20px;
-}
-
-.content {
-  gap: 20px; /* Add some space between the sections */
+    text-align: center;
+    background-color:#95ca6a ;
+    justify-items: center;
+    
 }
 
 .section {
-  margin-bottom: 20px;  /* Add space between the two sections */
+   /* Add space between the two sections */
   flex:1;
+  text-align: center;
+  padding: 5px;
+  justify-content: center;
+  display:block;
 }
 
-.section h4 {
-  font-size: 14px;
-  margin-bottom: 10px;
+p{
+  font-size:14px;
+  font-family: Josefin Sans;
+  margin-top:0em;
+  margin-bottom: 2px;
+
 }
-.section li{
-  font-size:10px;
+h4{
+  margin-top:0em;
+  margin-bottom:2px;
+  font-size: 18px;
+  font-family: Josefin Sans;
 }
 
-ul {
-  list-style-type: none;  /* Remove bullet points */
-}
-
-ul li {
-  margin-bottom: 5px;  /* Add some space between list items */
+.companion-container.open .container-trigger {
+  margin-bottom: 150px; /* Larger margin between containers when content is visible */
 }
