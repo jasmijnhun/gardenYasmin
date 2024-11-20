@@ -170,5 +170,5 @@ h4{
 }
 
 .companion-container.open .container-trigger {
-  margin-bottom: 150px; /* Larger margin between containers when content is visible */
+  margin-bottom: 200px; /* Larger margin between containers when content is visible */
 }
