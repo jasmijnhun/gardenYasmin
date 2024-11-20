@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 
   <title>Garden 2025</title>
-  <meta name="viewport" content="width=device-width, initial scale=1.0 maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
   <link rel="stylesheet" href="./styles.css"> 
     </head>
 <body> 
@@ -45,8 +45,13 @@ En er is een zadenbibliotheek, waarbij alle zaden ingevuld staan die gebruikt ku
 <div class="photo2"> <img src="" alt="Foto van de tuin"/ > </div>
 </div>
  
-<!-- Calender -->
+<!-- Weather -->
 <div class="vlak2">
+  <div class="weather-widget-container">
+<h1>Wat is het weer?</h1>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/52d886d00/wolvega/" data-label_1="WOLVEGA" data-label_2="WEATHER" data-icons="Climacons" data-theme="weather_one" >WOLVEGA WEATHER</a>
+  </div>
+
 </div>
 
 </div>
@@ -54,5 +59,16 @@ En er is een zadenbibliotheek, waarbij alle zaden ingevuld staan die gebruikt ku
   </section>
   </main>
   <script src="./script.js"></script>
+  <!-- Include the weather widget script here directly, right before the closing body tag -->
+  <script type="text/javascript">
+    var script = document.createElement('script');
+    script.src = "https://weatherwidget.io/js/widget.min.js?v=" + new Date().getTime();  // Add timestamp as version
+    script.async = true;
+    script.onload = function() {
+        console.log("Weather widget script loaded successfully.");
+    };
+    document.body.appendChild(script);
+</script>
+
   </body>
 </html>

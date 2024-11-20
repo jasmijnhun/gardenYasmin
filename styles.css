@@ -95,12 +95,13 @@ ul.navigatie li{
   background-color: #386C0A;
   color: white;
   width: 47%;
-  height: 80%;
+  height: min-content;
   float:right;
   border-radius:25px;
   border-style: solid;
   border-color: black;
   overflow: hidden;
+  text-align: center;
 }
 
 
@@ -116,5 +117,21 @@ ul.navigatie li{
   height:33%;
   margin:10px;
   }
+  /* Style for the widget itself */
+  .weatherwidget-io {
+    display: inline-block !important;
+    width: 100% !important;  /* Make widget fill the container */
+    min-height: 150px !important; /* Set minimum height */
+    background-color: #386C0A !important; /* Green background */
+    color: #fff !important;  /* White text */
+   
+    box-sizing: border-box;
+    border-radius: 25px;
+}
 
-  /*calender */
+.weather-widget-container {
+  width: 100%;
+  max-width: 100%;  /* Ensure it doesn't exceed container width */
+  padding: 0;
+  margin-right: 15px;
+}
