@@ -56,3 +56,99 @@
     ul.navigatie li{
      display:inline;
     }
+
+/*styling*/
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Plant Care Guide Container */
+  .plant-guide {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plant-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .plant-header h2 {
+    margin-right: 20px;
+  }
+  
+  .plant-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Care Section */
+  .care-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .care-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+  }
+  
+  /* Interactive Care Item */
+  .care-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .care-item:hover {
+    transform: scale(1.05);
+    background-color: #e7f7e5;
+  }
+  
+  .care-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .details {
+    display: none;
+    margin-top: 10px;
+    background-color: #e7f7e5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details p {
+    margin: 0;
+  }
+  
+  /* Show details when active */
+  .details.active {
+    display: block;
+  }
+  

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-  <title>Garden 2025</title>
+  <title>Plantinformatie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
   <link rel="stylesheet" href="../guide/guide.css"> 
     </head>
@@ -29,6 +29,50 @@
   </nav> 
   </header>
     <body>
+       <!-- Vegetable Section (Example: Tomato) -->
+  <div class="plant-guide">
+    <div class="plant-header">
+      <h2>Tomato Care Guide</h2>
+      <img src="tomato-icon.png" alt="Tomato Icon" class="plant-icon">
+    </div>
+    
+    <!-- Plant Traits Section -->
+    <div class="care-section" id="plant-traits">
+      <h3>Plant Traits</h3>
+      <div class="care-item" onclick="toggleDetails('plant-traits-details')">
+        <img src="plant-traits-icon.png" alt="Plant Traits Icon">
+        <span>Click for Details</span>
+      </div>
+      <div class="details" id="plant-traits-details">
+        <p>Tomatoes are typically bushy or vining plants. They grow up to 4-6 feet tall depending on the variety. Bush tomatoes are compact, while vining types require support.</p>
+      </div>
+    </div>
 
+    <!-- Watering Conditions Section -->
+    <div class="care-section" id="watering-conditions">
+      <h3>Watering Conditions</h3>
+      <div class="care-item" onclick="toggleDetails('watering-details')">
+        <img src="watering-icon.png" alt="Watering Icon">
+        <span>Click for Details</span>
+      </div>
+      <div class="details" id="watering-details">
+        <p>Tomatoes require regular watering. Aim for deep watering 1-2 times a week. Ensure soil is moist but not soggy to avoid root rot.</p>
+      </div>
+    </div>
+
+    <!-- Soil Conditions Section -->
+    <div class="care-section" id="soil-conditions">
+      <h3>Soil Conditions</h3>
+      <div class="care-item" onclick="toggleDetails('soil-details')">
+        <img src="soil-icon.png" alt="Soil Icon">
+        <span>Click for Details</span>
+      </div>
+      <div class="details" id="soil-details">
+        <p>Tomatoes prefer well-drained, loamy soil. Ensure the soil is rich in organic matter for optimal growth. Sandy soil is also acceptable with added compost.</p>
+      </div>
+    </div>
+  </div>
+
+<script href="../guide/guide.js"></script>
     </body>
 </html>
