@@ -6,6 +6,9 @@
   <title>Plantinformatie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
   <link rel="stylesheet" href="../guide/guide.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     </head>
 <body> 
   <header>
@@ -29,50 +32,121 @@
   </nav> 
   </header>
     <body>
-       <!-- Vegetable Section (Example: Tomato) -->
-  <div class="plant-guide">
-    <div class="plant-header">
-      <h2>Tomato Care Guide</h2>
-      <img src="tomato-icon.png" alt="Tomato Icon" class="plant-icon">
-    </div>
-    
-    <!-- Plant Traits Section -->
-    <div class="care-section" id="plant-traits">
-      <h3>Plant Traits</h3>
-      <div class="care-item" onclick="toggleDetails('plant-traits-details')">
-        <img src="plant-traits-icon.png" alt="Plant Traits Icon">
-        <span>Click for Details</span>
-      </div>
-      <div class="details" id="plant-traits-details">
-        <p>Tomatoes are typically bushy or vining plants. They grow up to 4-6 feet tall depending on the variety. Bush tomatoes are compact, while vining types require support.</p>
-      </div>
-    </div>
+ 
+        <div class="main-container">
+        <h1>Plantinformatie</h1>
+        <p>Klik op een groente, fruit, kruid of bloem om meer informatie te krijgen!</p>
+      
+        <div class="container">
+            <!-- Vegetable Selector: Buttons below each other -->
+            <div class="vegetable-selector">
+              <button onclick="showVegetableInfo('tomato')"><img src="../compabiliteit/tomato.jpg"></button>
+              <button onclick="showVegetableInfo('carrot')"><img src="../compabiliteit/wortel.jpg"></button>
+              <button onclick="showVegetableInfo('lettuce')"><img src="../compabiliteit/sla.jpg"></button>
+            </div>
+        
+            <!-- Vegetable Care Instructions: Displayed on the right side -->
+            <div id="care-info-container" class="care-info-container">
+              <div id="tomato-info" class="care-info">
+                <h3>Tomato Care Guide</h3>
+                <div class="care-step">
+                  <h4>Planting</h4>
+                  <p>Plant tomatoes after the last frost date, 24–36 inches apart, in well-drained soil.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Watering</h4>
+                  <p>Water deeply, 1-1.5 inches per week, but avoid wetting the leaves.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Sunlight</h4>
+                  <p>Tomatoes need full sunlight, at least 6-8 hours per day.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Soil</h4>
+                  <p>Tomatoes prefer slightly acidic soil with a pH between 6.0 and 6.8.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Harvesting</h4>
+                  <p>Harvest tomatoes when they are fully colored and firm to the touch. Generally, this is 50-85 days after planting, depending on the variety.</p>
+                </div>
+              </div>
+        
+              <div id="carrot-info" class="care-info">
+                <h3>Carrot Care Guide</h3>
+                <div class="care-step">
+                  <h4>Planting</h4>
+                  <p>Plant carrot seeds 1/4 inch deep, 1-2 inches apart, in loose, well-drained soil.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Watering</h4>
+                  <p>Carrots need moderate watering. Keep the soil moist but not waterlogged.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Sunlight</h4>
+                  <p>Carrots grow best in full sunlight (6-8 hours a day).</p>
+                </div>
+                <div class="care-step">
+                  <h4>Soil</h4>
+                  <p>Carrots prefer loose, sandy soil with good drainage and a pH of 6.0 to 6.8.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Harvesting</h4>
+                  <p>Harvest carrots 2-4 months after planting when they are firm and bright orange. Pull gently to avoid breaking the root.</p>
+                </div>
+              </div>
+        
+              <div id="lettuce-info" class="care-info">
+                <h3>Lettuce Care Guide</h3>
+                <div class="care-step">
+                  <h4>Planting</h4>
+                  <p>Plant lettuce seeds 1/8 inch deep in cool, moist soil.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Watering</h4>
+                  <p>Lettuce requires frequent, light watering to keep the soil moist but not soggy.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Sunlight</h4>
+                  <p>Lettuce grows best in full to partial sunlight, about 4-6 hours a day.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Soil</h4>
+                  <p>Lettuce prefers loose, well-drained soil, with a slightly acidic pH of 6.0 to 7.0.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Harvesting</h4>
+                  <p>Harvest lettuce when leaves are large enough to eat, typically 30-60 days after planting.</p>
+                </div>
+              </div>
+        
+              <div id="spinach-info" class="care-info">
+                <h3>Spinach Care Guide</h3>
+                <div class="care-step">
+                  <h4>Planting</h4>
+                  <p>Plant spinach seeds 1/2 inch deep, 2-4 inches apart, in well-drained, cool soil.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Watering</h4>
+                  <p>Spinach needs regular watering to keep the soil consistently moist but not soggy.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Sunlight</h4>
+                  <p>Spinach prefers partial to full sunlight. It thrives in cool weather.</p>
+                </div>
+                <div class="care-step">
+                  <h4>Soil</h4>
+                  <p>Spinach grows best in rich, well-drained soil with a slightly acidic pH (6.0 to 7.0).</p>
+                </div>
+                <div class="care-step">
+                  <h4>Harvesting</h4>
+                  <p>Harvest spinach when leaves are large enough to eat. Typically 40-50 days after planting.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
 
-    <!-- Watering Conditions Section -->
-    <div class="care-section" id="watering-conditions">
-      <h3>Watering Conditions</h3>
-      <div class="care-item" onclick="toggleDetails('watering-details')">
-        <img src="watering-icon.png" alt="Watering Icon">
-        <span>Click for Details</span>
-      </div>
-      <div class="details" id="watering-details">
-        <p>Tomatoes require regular watering. Aim for deep watering 1-2 times a week. Ensure soil is moist but not soggy to avoid root rot.</p>
-      </div>
-    </div>
-
-    <!-- Soil Conditions Section -->
-    <div class="care-section" id="soil-conditions">
-      <h3>Soil Conditions</h3>
-      <div class="care-item" onclick="toggleDetails('soil-details')">
-        <img src="soil-icon.png" alt="Soil Icon">
-        <span>Click for Details</span>
-      </div>
-      <div class="details" id="soil-details">
-        <p>Tomatoes prefer well-drained, loamy soil. Ensure the soil is rich in organic matter for optimal growth. Sandy soil is also acceptable with added compost.</p>
-      </div>
-    </div>
-  </div>
-
-<script href="../guide/guide.js"></script>
+<script src="../guide/guide.js"></script>
     </body>
 </html>

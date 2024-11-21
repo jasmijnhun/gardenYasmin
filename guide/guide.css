@@ -57,98 +57,114 @@
      display:inline;
     }
 
-/*styling*/
-/* Basic page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 20px;
+
+
+.main-container{
+    padding:0;
+  margin:20px;
+  background-color: #226708e1;
+  border-radius: 30px;
+  width:97%;
+  height:min-content;
+  overflow:hidden;
+  border: #386C0A solid 5px;
+  padding: 20px;
+  text-align:center;
+}
+
+
+
+
+    h1 {
+        color: black;
+        font-family:'Josefin Sans';
+        font-size: 26px;
+        text-align:center;
+      }
+      
+      button {
+        background-color: #58a713;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 150px;
+
+      }
+      button img{
+        width: 50px;
+        height: 50px;
+      }
+      
+      button:hover {
+        background-color: #608245;
+      }
+      
+      /* Container for the vegetable selector and care instructions */
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      
+      /* Vegetable Selector: Buttons stacked vertically */
+      .vegetable-selector {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        padding-left: 20px;
+        justify-content: center;
+      }
+      
+      /* Vegetable Care Instructions (right side) */
+      #care-info-container {
+        display: none; /* Initially hide the care info container */
+        flex: 1;
+        max-width: 70%;
+        margin-left: 20px;
+        padding: 20px;
+        background-color: #226708e1;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Initially hide care info */
+.care-info {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: opacity 0.5s ease, visibility 0.5s, height 0.5s ease;
   }
   
-  h1 {
-    color: #333;
+  /* Show care info when active */
+  .care-info.active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    
   }
   
-  /* Plant Care Guide Container */
-  .plant-guide {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .plant-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .care-step {
     margin-bottom: 20px;
+    text-align: left;
   }
-  
-  .plant-header h2 {
-    margin-right: 20px;
-  }
-  
-  .plant-icon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* Care Section */
-  .care-section {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-  }
-  
-  .care-section h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #4CAF50;
-  }
-  
-  /* Interactive Care Item */
-  .care-item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .care-item:hover {
-    transform: scale(1.05);
-    background-color: #e7f7e5;
-  }
-  
-  .care-item img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .details {
-    display: none;
-    margin-top: 10px;
-    background-color: #e7f7e5;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .details p {
-    margin: 0;
-  }
-  
-  /* Show details when active */
-  .details.active {
-    display: block;
-  }
-  
+      
+      h3 {
+        color: #4CAF50;
+      }
+      
+      h4 {
+        color: #2c3e50;
+        font-size: 1.1em;
+      }
+      
+      p {
+        
+        color: black;
+        font-family:'Josefin Sans';
+        font-size: 18px;
+        text-align:center;
+      }
