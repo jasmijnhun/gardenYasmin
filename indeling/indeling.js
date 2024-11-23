@@ -130,47 +130,47 @@ function resetLayout() {
     alert("Grid reset!");
 }
 
-function saveAsImage() {
-    const gardenGrid = document.getElementById('gardenGrid'); // Ensure we are getting the correct element
-    if (!gardenGrid) {
-        console.error("Error: Garden grid element not found!");
-        return;
-    }
+   function saveAsImage() {
+            const gardenGrid = document.getElementById('gardenGrid'); // Ensure we are getting the correct element
+            if (!gardenGrid) {
+                console.error("Error: Garden grid element not found!");
+                return;
+            }
 
-    console.log("Capturing the garden grid as an image...");
+            console.log("Capturing the garden grid as an image...");
 
-    // Ensure html2canvas is available
-    if (typeof html2canvas === 'function') {
-        console.log("html2canvas is available");
+            // Ensure html2canvas is available
+            if (typeof html2canvas === 'function') {
+                console.log("html2canvas is available");
 
-        html2canvas(gardenGrid).then((canvas) => {
-            const imgURL = canvas.toDataURL("image/png");
-            console.log("Image URL generated:", imgURL); // Debug log for image URL
+                html2canvas(gardenGrid).then((canvas) => {
+                    const imgURL = canvas.toDataURL("image/png");
+                    console.log("Image URL generated:", imgURL); // Debug log for image URL
 
-            // Create a temporary download link
-            const link = document.createElement('a');
-            link.href = imgURL;
-            link.download = 'garden.png'; // Name of the downloaded image file
-            link.click(); // Simulate a click to trigger the download
-        }).catch((error) => {
-            console.error("Error during image capture:", error);
+                    // Create a temporary download link
+                    const link = document.createElement('a');
+                    link.href = imgURL;
+                    link.download = 'garden.png'; // Name of the downloaded image file
+                    link.click(); // Simulate a click to trigger the download
+                }).catch((error) => {
+                    console.error("Error during image capture:", error);
+                });
+            } else {
+                console.error("html2canvas is not loaded or not a function.");
+            }
+        }
+
+        // Attach event listener after DOM is fully loaded
+        window.addEventListener('load', function () {
+            const saveImageBtn = document.getElementById('saveImageBtn');
+
+            // Ensure button exists and add event listener
+            if (saveImageBtn) {
+                saveImageBtn.addEventListener('click', saveAsImage);
+            } else {
+                console.error("Error: Save button element not found!");
+            }
         });
-    } else {
-        console.error("html2canvas is not loaded or not a function.");
-    }
-}
-
-// Attach event listener after DOM is fully loaded
-window.addEventListener('load', function () {
-    const saveImageBtn = document.getElementById('saveImageBtn');
-
-    // Ensure button exists and add event listener
-    if (saveImageBtn) {
-        saveImageBtn.addEventListener('click', saveAsImage);
-    } else {
-        console.error("Error: Save button element not found!");
-    }
-});
 
 // Update Grid Size
 updateGridBtn.addEventListener('click', () => {

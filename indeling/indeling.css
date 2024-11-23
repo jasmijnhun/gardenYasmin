@@ -95,7 +95,7 @@
         /* Carousel container styles */
         .carousel-container {
             display: flex;
-            justify-content: center;
+            /*justify-content: center;*/
             align-items: center;
             position: relative;
             overflow: hidden; /* Hide the images that are out of the container */
@@ -104,8 +104,8 @@
         
         .carousel {
             display: flex;
-            justify-content: center;
-            overflow: hidden;
+            transition: transform 0.5s ease;
+
         }
         
         .carousel-images {
@@ -115,7 +115,7 @@
         
         .carousel-images img {
             width: 100px;
-            height: 100px;
+            object-fit: contain;
             margin: 5px;
             cursor: pointer;
         }
