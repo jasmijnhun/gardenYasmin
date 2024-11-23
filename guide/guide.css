@@ -150,6 +150,7 @@
   .care-step {
     margin-bottom: 20px;
     text-align: left;
+    display: flex;
   }
       
       h3 {
@@ -159,12 +160,27 @@
       h4 {
         color: #2c3e50;
         font-size: 1.1em;
+        text-align:center
       }
       
-      p {
+     .main-container p {
         
         color: black;
         font-family:'Josefin Sans';
         font-size: 18px;
         text-align:center;
+      }
+
+      .care-step p{
+        color: black;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .care-step img{
+        width: 75px;
+        height: 75px;
+        border: black 1px solid;
+        margin-right: 10px;
       }
