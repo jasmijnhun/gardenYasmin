@@ -1,0 +1,184 @@
+*{
+    box-sizing:border-box;
+    }
+    
+    
+    /*upper part of the website*/
+    .upperimage{
+        width: 100%;
+        height:200px;
+        overflow:hidden;
+    }
+    
+    .upperimage img{
+      width: 100%;
+       object-fit: cover;
+    }
+    
+    
+    /* Navigation Bar */
+    
+    .navigatie{
+        overflow: hidden;
+      background-color: #394D29;
+    }
+    
+    ul{
+     list-style-type: none;
+        margin: 0;
+        padding:0;
+        }
+    
+    
+    .navigatie a{
+       float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+         list-style-type: none;
+    }
+    
+    .navigatie a:hover {
+      background-color: #7B9A43;
+      color: black;
+    }
+    .navigatie a.active {
+      background-color: #386C0A;
+      color: white;
+    }
+    
+    ul.navigatie li{
+     display:inline;
+    }
+
+
+    /*garden planner */
+
+    .main-container{
+        padding:0;
+      margin:20px;
+      background-color: #226708e1;
+      border-radius: 30px;
+      width:97%;
+      height:min-content;
+      overflow:hidden;
+      border: #386C0A solid 5px;
+      padding: 20px;
+      text-align:center;
+    }
+
+    /* General body styles */
+    body{
+        margin:0;
+        background-color: black;
+        width: 100%;
+        } 
+  
+ 
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        
+        .carousel {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .carousel-images {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .carousel-images img {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        
+        /* Carousel Navigation buttons */
+        .carousel-btn {
+            background-color: #46860d;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        /* Garden Grid Styles */
+/* Garden Grid Styles */
+.garden-grid {
+    display: grid;
+    gap: 5px;
+   
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: center; /* Center grid items */
+    align-items: center; /* Center grid items vertically */
+    width: 100%;
+    max-width: 1500px; /* Max width for the grid container */
+    margin: 0 auto; /* Center the grid container horizontally */
+}
+
+.garden-grid div {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.garden-grid img {
+    width: 100%;        /* Make image responsive to fit the grid cell */
+    height: 100%;       /* Make image responsive to fit the grid cell */
+    object-fit: cover;  /* Crop image to cover the cell without distortion */
+    display: block;     /* Remove unwanted space around the image */
+}
+
+/* Grid Size Controls */
+.grid-size {
+    margin-top: 20px;
+}
+
+.grid-size label,
+.grid-size input {
+    margin-right: 10px;
+}
+
+/* Control Buttons */
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #46860d;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}

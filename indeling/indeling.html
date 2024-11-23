@@ -5,10 +5,13 @@
 
   <title>Indeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
-  <link rel="stylesheet" href="../guide/guide.css"> 
+  <link rel="stylesheet" href="../indeling/indeling.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script src="../indeling/html2canvas.js"></script>
+
+
     </head>
 <body> 
   <header>
@@ -33,3 +36,48 @@
   </nav> 
   </header>
     <body>
+
+        <div class="main-container">
+            <!-- Carousel Section -->
+        <h1>Drag Vegetables to Your Garden</h1>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <button class="carousel-btn prev" id="prev-btn">&lt;</button>
+        <div class="carousel">
+            <div class="carousel-images" id="carousel-container">
+                <img src="../indeling/indelingpng/amsoiicon.png" alt="Amsoi" id="amsoi" class="draggable" draggable="true" title="Amsoi">
+                <img src="../indeling/indelingpng/pickle.png" alt="Augurk" id="augurk" class="draggable" draggable="true" title="Augurk">
+                <img src="../indeling/indelingpng/beet.png" alt="Biet" id="biet" class="draggable" draggable="true" title="Biet">
+                <img src="../indeling/indelingpng/celery.png" alt="Bleekselderij" id="selderij" class="draggable" draggable="true" title="Bleekselderij">
+            </div>
+        </div>
+        <button class="carousel-btn next" id="next-btn">&gt;</button>
+    </div>
+
+    <!-- Grid Size Input -->
+    <div class="grid-size">
+        <label for="rows">Rows:</label>
+        <input type="number" id="rows" value="5" min="1" max="20">
+        <label for="cols">Columns:</label>
+        <input type="number" id="cols" value="5" min="1" max="25">
+        <button id="updateGridBtn">Update Grid</button>
+    </div>
+
+    <!-- Garden Grid Section -->
+    <div class="garden-grid" id="gardenGrid">
+        <!-- Grid will be dynamically generated here -->
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="controls">
+        <button id="saveBtn">Save Layout</button>
+        <button id="loadBtn">Load Layout</button>
+        <button id="resetBtn">Reset Grid</button>
+        <button id="saveImageBtn" type="button">Save as Image</button>
+    </div>
+
+</div>
+        <script src="../indeling/indeling.js"></script>
+          </body>
+        </html>
