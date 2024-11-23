@@ -82,11 +82,24 @@
         }
         
         /* Carousel Styles */
-        .carousel-container {
+        .carousel-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            width: 80%;
-            overflow: hidden;
+            width: 40%;
             margin: 20px auto;
+            
+        }
+
+        /* Carousel container styles */
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden; /* Hide the images that are out of the container */
+            width: 100%; /* Full width of the wrapper */
         }
         
         .carousel {
@@ -121,11 +134,11 @@
         }
         
         .prev {
-            left: 0;
+            left: -50px;
         }
         
         .next {
-            right: 0;
+            right: -50px;
         }
         
         /* Garden Grid Styles */
