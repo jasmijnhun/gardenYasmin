@@ -123,32 +123,43 @@
       
       /* Vegetable Care Instructions (right side) */
       #care-info-container {
-        display: none; /* Initially hide the care info container */
+        display: flex; /* Allow flexible layout */
         flex: 1;
         max-width: 70%;
         margin-left: 20px;
-        padding: 20px;
+        padding: 10px;
         background-color: #226708e1;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
       
       /* Initially hide care info */
-.care-info {
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-    transition: opacity 0.5s ease, visibility 0.5s, height 0.5s ease;
-  }
+      .care-info {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden; /* Hide content when collapsed */
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+        border: 2px dashed red; /* Debug padding area */
+        box-sizing: border-box;
+        padding: 0; /* Start with no padding */
+      }
+      
+      /* Show care info when active */
+      .care-info.active {
+        opacity: 1;
+        max-height: 1500px; /* Set this high enough for your content */
+        padding: 20px; /* Add padding only when active */
+        background-color: #226708e1;
+      }
+      
   
-  /* Show care info when active */
-  .care-info.active {
-    opacity: 1;
-    visibility: visible;
-    height: auto;
-    
+  .care-info p {
+    margin: 0; /* Reset any default margins on text */
+    padding: 10px 0; /* Add consistent spacing within the text container */
+    background-color: rgba(0, 255, 0, 0.2); /* Debug text area */
+    font-style: italic;
   }
-  
+
   .care-step {
     margin-bottom: 20px;
     text-align: left;
@@ -156,13 +167,16 @@
   }
       
       h3 {
-        color: #4CAF50;
+        color: black;
+        padding: 0;
+        font-family: 'Josefin Sans';
+        font-size: 24px;
       }
       
       h4 {
         color: #2c3e50;
         font-size: 1.1em;
-        text-align:center
+        text-align:center;        
       }
       
      .main-container p {
@@ -178,6 +192,7 @@
         font-family: 'Josefin Sans';
         font-size: 18px;
         text-align: left;
+        font-style: normal;
       }
 
       .care-step img{
