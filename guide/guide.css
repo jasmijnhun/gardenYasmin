@@ -131,6 +131,9 @@
         background-color: #226708e1;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0; /* Reset container margins */
+  padding: 0; 
+
       }
       
       /* Initially hide care info */
@@ -139,16 +142,18 @@
         max-height: 0;
         overflow: hidden; /* Hide content when collapsed */
         transition: opacity 0.5s ease, max-height 0.5s ease;
-        border: 2px dashed red; /* Debug padding area */
         box-sizing: border-box;
         padding: 0; /* Start with no padding */
+        margin:0;
+        position:absolute;
+        width:60%;;
       }
       
       /* Show care info when active */
       .care-info.active {
         opacity: 1;
         max-height: 1500px; /* Set this high enough for your content */
-        padding: 20px; /* Add padding only when active */
+        padding: 10px; /* Add padding only when active */
         background-color: #226708e1;
       }
       
@@ -156,7 +161,6 @@
   .care-info p {
     margin: 0; /* Reset any default margins on text */
     padding: 10px 0; /* Add consistent spacing within the text container */
-    background-color: rgba(0, 255, 0, 0.2); /* Debug text area */
     font-style: italic;
   }
 
