@@ -70,93 +70,73 @@
       text-align:center;
     }
 
-    /*other */
-    .plant-container {
-        max-width: 1000px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      .vegetable-header {
-        width: 100%;
-        padding: 15px;
-        background-color: #d34a2f;
-        color: white;
-        border: none;
-        font-size: 20px;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-      
-      .vegetable-header:hover {
-        background-color: #f38c67;
-      }
-      
-      .plant-cycle-container {
-        display: none; /* Initially hidden */
-        padding: 20px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      
-      h1 {
-        color: #d34a2f;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      
-      .timeline {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: flex-start;
-      }
-      
-      .stage {
-        background: #ffe9e1;
-        border: 2px solid #d34a2f;
-        border-radius: 8px;
-        padding: 15px;
-        position: relative;
-        flex: 1;
-        min-width: 150px;
-        max-width: 200px;
-        text-align: center;
-        transition: all 0.3s ease;
-      }
-      
-      .stage h2 {
-        margin: 0;
-        color: #d34a2f;
-      }
-      
-      .stage p {
-        margin: 5px 0;
-      }
-      
-      .stage:hover {
-        transform: scale(1.05);
-        background-color: #ffd8b3;
-      }
-      
-      .stage::after {
-        content: '→';
-        position: absolute;
-        right: -15px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 30px;
-        color: #d34a2f;
-        visibility: hidden;
-      }
-      
-      .stage:last-child::after {
-        visibility: hidden;
-      }
-      
+ /* new */
+/* Timeline Styling */
+/* Timeline Styling */
+.timeline-container {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .days-timeline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+  
+  .stage-block {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    margin-right: 5px; /* Space between blocks */
+  }
+  
+  .stage-block:last-child {
+    margin-right: 0;
+  }
+  
+  /* Stage Colors */
+  .stage-block.germination {
+    background-color: #8BC34A;
+  }
+  
+  .stage-block.seedling {
+    background-color: #FFC107;
+    color: black;
+  }
+  
+  .stage-block.vegetative {
+    background-color: #FF9800;
+  }
+  
+  .stage-block.flowering {
+    background-color: #FF5722;
+  }
+  
+  .stage-block.harvesting {
+    background-color: #673AB7;
+  }
+  
+  /* Tooltip Styling */
+  .tooltip {
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  

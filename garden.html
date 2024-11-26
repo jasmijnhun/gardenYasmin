@@ -20,14 +20,24 @@
   </header>
 <body>  
 <div class="main-container">
-  <div class="plant-container">
-    <!-- Button to toggle lifecycle information -->
-    <button class="vegetable-header" onclick="toggleLifecycle()">Tomato Plant Lifecycle</button>
-    <!-- Collapsible container for lifecycle details -->
-    <div class="plant-cycle-container" id="tomato-lifecycle">
-      <h1>Tomato Plant Lifecycle</h1>
-    </div>
+  <div class="timeline-container">
+    <div id="days-timeline" class="days-timeline"></div>
   </div>
+  
+  <table id="growth-table" class="growth-table">
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>Days</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  
+  <!-- Tooltip for extra information -->
+  <div id="tooltip" class="tooltip"></div>
+  
 </div>
 
   

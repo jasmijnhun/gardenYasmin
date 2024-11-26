@@ -35,47 +35,48 @@
   </header>
 <body>
 <div class="main-container">
-    <div class="plant-container">
-        <!-- Button to toggle lifecycle information -->
-        <button class="vegetable-header" onclick="toggleLifecycle()">Tomato Plant Lifecycle</button>
-        
-        <!-- Collapsible container for lifecycle details -->
-        <div class="plant-cycle-container" id="tomato-lifecycle">
-          <h1>Tomato Plant Lifecycle</h1>
-          <div class="timeline">
-            <!-- Stage blocks for the lifecycle -->
-            <div class="stage" data-stage="Seed">
-              <h2>Seed (0-7 days)</h2>
-              <p><strong>Description:</strong> Tomato seeds are sown indoors 6-8 weeks before the last frost date.</p>
-              <p><strong>Watering:</strong> Keep soil consistently moist but not waterlogged.</p>
-              <p><strong>Fertilizing:</strong> No fertilizing needed during this stage.</p>
-            </div>
-            <div class="stage" data-stage="Germination">
-              <h2>Germination (5-10 days)</h2>
-              <p><strong>Description:</strong> Seeds germinate at 20-25°C. Monitor soil moisture carefully.</p>
-              <p><strong>Watering:</strong> Lightly water daily to keep the topsoil moist.</p>
-              <p><strong>Fertilizing:</strong> No fertilizing yet.</p>
-            </div>
-            <div class="stage" data-stage="Seedling Growth">
-              <h2>Seedling Growth (10-20 days)</h2>
-              <p><strong>Description:</strong> Seedlings develop their first true leaves. Transplant to larger pots if needed.</p>
-              <p><strong>Watering:</strong> Water every 2-3 days, ensuring the soil dries slightly between watering.</p>
-              <p><strong>Fertilizing:</strong> Apply diluted liquid fertilizer (half strength) every 10 days.</p>
-            </div>
-            <div class="stage" data-stage="Flowering">
-              <h2>Flowering (20-40 days)</h2>
-              <p><strong>Description:</strong> Plants develop flowers, signaling preparation for fruit production.</p>
-              <p><strong>Watering:</strong> Water deeply 2-3 times a week, depending on soil moisture.</p>
-              <p><strong>Fertilizing:</strong> Use a balanced fertilizer (e.g., 10-10-10) once a week.</p>
-            </div>
-            <div class="stage" data-stage="Fruiting">
-              <h2>Fruiting (40-70+ days)</h2>
-              <p><strong>Description:</strong> Fruits grow and ripen. Harvest when ripe.</p>
-              <p><strong>Watering:</strong> Deep water weekly; avoid wetting leaves to prevent disease.</p>
-              <p><strong>Fertilizing:</strong> Switch to high-potassium fertilizer (e.g., 5-10-10) every 2 weeks.</p>
-            </div>
-        </div>
+<div class="plant-container" id="carrot">
+  <div class="growth-container">
+    <div class="days-container">
+      <p>0 days</p>
     </div>
+    <div class="days-container">
+      <p>7</p>
+    </div>
+    <div class="days-container">
+      <p>14</p>
+    </div>
+    <div class="days-container">
+      <p>21</p>
+    </div>
+    <div class="days-container">
+      <p>35</p>
+    </div>
+    <div class="days-container">
+      <p>46</p>
+    </div>
+    
+  </div>
+
+  <div class="growth-container">
+    <div class="stage-container"></div>
+    <div class="stage-container"></div>
+    <div class="stage-container"></div>
+    <div class="stage-container"></div>
+    <div class="stage-container"></div>
+  </div>
+  <div class="watering-container">
+    <div class="watering-class"></div>
+    <div class="watering-class"></div>
+    <div class="watering-class"></div>
+    <div class="watering-class"></div>
+    <div class="watering-class"></div>
+  </div>
+</div>
+ 
+<div class="plant-container" id="broccoli">
+  
+</div>
 </div>
 
 <script src="../plantcyclus/plantcyclus.js"></script>
