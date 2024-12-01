@@ -78,22 +78,22 @@
     width: 100%;
     padding: 10px;
     background-color: #386C0A;
-    border: black solid 2px;
+    border: #394D29 solid 2px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     margin:10px;  
+    font-family: 'Josefin Sans';
    }
    .plant-container h1{
     margin:5px;
     font-size: 24px;
     font-family: 'Josefin Sans';
     font-weight: 600;
+    color:white;
    }
    
    .days-container{
-    background-color: grey;
-    border: black 2px solid;
     width:16.6%;
     height:30px;
     display: flex;
@@ -106,9 +106,17 @@
     font-size: 18px;
    }
    
-   .growth-container{
-    background-color: grey;
-    
+   .growth-container{   
+    width:100%;
+    margin:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:0;
+    background:radial-gradient(ellipse, #f7f7f87e, transparent);
+   }
+
+   .week-container{
     width:100%;
     margin:0;
     display:flex;
@@ -123,9 +131,11 @@
     justify-content: center;  
     align-items: center;      
     text-align: center; 
-    background: radial-gradient(ellipse at center,#386C0A, #5aae127b);
+    background: radial-gradient(ellipse at center,#2a5408, #386C0A);
+    color: white;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    border-top:1px solid black;
    }
 .stage-container:first-child{
   border-left:2px solid black;
@@ -136,8 +146,6 @@
 }
 
    .watering-container{
-    background-color: grey;
-    border: blue 2px dashed;
     width:100%;
     margin:0;
     display:flex;
@@ -147,18 +155,27 @@
    }
 
    .watering-class{
-    border:yellow 2px solid;
+    background: radial-gradient(ellipse at center, #0E87CC, #095d8e);
     width:16.6%;
     height:30px;
     display: flex;
     justify-content: center;  
     align-items: center;      
-    text-align: center; 
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top:1px solid black; 
+    color:white;
+   }
+   .watering-class:first-child{
+    border-left: 2px solid black;
+   }
+   .watering-class:last-child{
+    border-right: 2px solid black;
    }
 
+
    .fertilizing-container{
-    background-color: grey;
-    border:pink 2px dotted;
     width:100%;
     margin:0;
     display: flex;
@@ -167,12 +184,40 @@
     padding: 0;
    }
    .fertilization{
-    border: purple 2px dotted;
     width:16.6%;
     height:30px;
     display: flex;
     justify-content: center;  
     align-items: center;      
     text-align: center; 
+    border-left:1px solid black;
+    border-right:1px solid black;
+    background:radial-gradient(ellipse at center, #80471C, #482810);
+    color:white;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+   }
+   .fertilization:first-child{
+    border-left:2px solid black;
+   }
+   .fertilization:last-child{
+    border-right:2px solid black;
+   }
+
+
+
+
+
+   /* table */
+   table{
+    border-collapse: collapse;
+   }
+
+   td{
+    border:1px solid black;
    }
    
+   th{
+    border: 1px solid black;
+    width: calc(100% / 70);
+   }
