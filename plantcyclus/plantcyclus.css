@@ -78,7 +78,7 @@
     width: 100%;
     padding: 10px;
     background-color: #386C0A;
-    border: #394D29 solid 2px;
+    border: black solid 4px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -100,6 +100,15 @@
     justify-content: center;  
     align-items: center;      
     text-align: center; 
+   }
+
+   .days-containerone{
+    width:14.2%;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    }
 
    .days-container p{
@@ -145,6 +154,20 @@
   border-right: 2px solid black;
 }
 
+.stage-containerone{
+  width:14.2%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  background: radial-gradient(ellipse at center,#2a5408, #386C0A);
+    color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top:1px solid black;
+}
+
    .watering-container{
     width:100%;
     margin:0;
@@ -174,6 +197,19 @@
     border-right: 2px solid black;
    }
 
+   .watering-classone{
+    background: radial-gradient(ellipse at center, #0E87CC, #095d8e);
+    width:14.2%;
+    height:30px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top:1px solid black; 
+    color:white;
+   }
 
    .fertilizing-container{
     width:100%;
@@ -202,6 +238,21 @@
    }
    .fertilization:last-child{
     border-right:2px solid black;
+   }
+
+   .fertilizationone{
+    width:14.2%;
+    height:30px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center; 
+    border-left:1px solid black;
+    border-right:1px solid black;
+    background:radial-gradient(ellipse at center, #80471C, #482810);
+    color:white;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
    }
 
 
