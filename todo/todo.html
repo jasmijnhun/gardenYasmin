@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+
+  <title>To do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+  <link rel="stylesheet" href="../todo/todo.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+<body> 
+  <header>
+    <!-- Foto boven navigatie -->
+<div class="upperimage">
+  <img src="../romatomato.jpg" alt="Vegetable Garden"/>
+  </div>
+
+  
+  <!--Navigatiepagina-->
+ 
+    <nav class="navigatie">
+    <ul>
+      <li><a href="../index.html">Homepagina</a></li>
+      <li><a href="../planningshulp/planningshulp.html">Planningshulp</a></li>
+      <li><a href="../planning_2025/planning_2025.html">Planning 2025</a></li>
+      <li><a href="../zaden/zaden.html">Zadenbibliotheek</a></li>
+      <li><a href="../compabiliteit/compabiliteit.html">Compabiliteitteelt</a></li>
+      <li><a href="../guide/guide.html">Plantinformatie</a></li>
+      <li><a href="../indeling/indeling.html">Indeling</a></li>
+      <li><a href="../plantcyclus/plantcyclus.html">Plantcyclus</a></li>
+      <li><a class="active" href="../todo/todo.html">To Do</a></li>
+      </ul>
+  </nav> 
+  </header>
+<body>
+    <div class="main-container">
+        <div class="calendar-tabs">
+            <div class="tabs">
+              <button class="tab" data-month="january">Januari</button>
+              <button class="tab" data-month="february">Februari</button>
+              <button class="tab" data-month="march">Maart</button>
+              <button class="tab" data-month="april">April</button>
+              <button class="tab" data-month="may">Mei</button>
+              <button class="tab" data-month="june">Juni</button>
+              <button class="tab" data-month="july">Juli</button>
+              <button class="tab" data-month="august">Augustus</button>
+              <button class="tab" data-month="september">September</button>
+              <button class="tab" data-month="october">Oktober</button>
+              <button class="tab" data-month="november">November</button>
+              <button class="tab" data-month="december">December</button>
+            </div>
+          
+            <div class="content">
+                <div id="january" class="tab-content">
+                    <h2>Januari</h2>
+                    <ul class="task-list">
+                        <li>
+                          <input type="checkbox" class="task-checkbox" id="task-1-january" />
+                          <label for="task-1-january">Start planning your garden layout.</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="task-checkbox" id="task-2-january" />
+                          <label for="task-2-january">Start onions, leeks, and early tomatoes indoors.</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="task-checkbox" id="task-3-january" />
+                          <label for="task-3-january">Prepare garden beds for the coming season.</label>
+                        </li>
+                      </ul>
+                  </div>
+                  
+              <div id="february" class="tab-content">
+                <h2>February</h2>
+               <ul class="task-list">
+                <li>
+                    <input type="checkbox" class="task-checkbox" id="task-1-february"/>
+                    <label for="task-1-february">bloelb</label>
+                </li>
+               </ul>
+              </div>
+              <!-- Add other months similarly -->
+            </div>
+          </div>       
+    </div>
+</body>
+<script src="../todo/todo.js"></script>
+</html>

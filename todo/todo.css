@@ -1,0 +1,158 @@
+*{
+    box-sizing:border-box;
+    }
+    
+    body{
+    margin:0;
+    background-color: black;
+    width: 100%;
+    } 
+    /*upper part of the website*/
+    .upperimage{
+        width: 100%;
+        height:200px;
+        overflow:hidden;
+    }
+    
+    .upperimage img{
+      width: 100%;
+       object-fit: cover;
+    }
+    
+    
+    /* Navigation Bar */
+    
+    .navigatie{
+        overflow: hidden;
+      background-color: #394D29;
+    }
+    
+    ul{
+     list-style-type: none;
+        margin: 0;
+        padding:0;
+        }
+    
+    
+    .navigatie a{
+       float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+         list-style-type: none;
+    }
+    
+    .navigatie a:hover {
+      background-color: #7B9A43;
+      color: black;
+    }
+    .navigatie a.active {
+      background-color: #386C0A;
+      color: white;
+    }
+    
+    ul.navigatie li{
+     display:inline;
+    }
+
+    .main-container{
+        padding:0;
+      margin:20px;
+      background-color: #226708e1;
+      border-radius: 30px;
+      width:97%;
+      height:min-content;
+      overflow:hidden;
+      border: #386C0A solid 5px;
+      padding: 20px;
+    }
+
+    /*tabs */
+    .calendar-tabs {
+        width:80%;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+        background-color: transparent;
+      }
+      
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        background-color: #4d950e;
+        
+      }
+      
+      .tab {
+        flex: 1;
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        background-color: #4d950e;
+        transition: background-color 0.3s ease;
+        font-family: 'Josefin Sans';
+        font-size: 16px;
+      }
+      
+      .tab:hover,
+      .tab.active {
+        background-color: #275728;
+        color: white;
+      }
+      
+      .tab-content {
+        display: none;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: #4d950e;
+        font-family: 'Josefin Sans';
+      }
+      
+      .tab-content.active {
+        display: block;
+      }
+
+      /* task list */
+      .task-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .task-list li {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+      }
+      
+      .task-checkbox {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      
+      .task-checkbox:checked + label {
+        text-decoration: line-through;
+        color: #000000;
+      }
+      
+      .task-list li label {
+        cursor: pointer;
+        font-size: 16px;
+      }
+      /* Ensure the label text is struck through when its associated checkbox is checked */
+.task-list li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: black;
+  }
+  
+  .tab-content h2{
+    font-size: 24px;
+    text-align: center;
+  }
+      
