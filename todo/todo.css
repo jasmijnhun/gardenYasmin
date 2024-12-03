@@ -121,7 +121,7 @@
       .task-list {
         list-style-type: none;
         padding: 0;
-        margin: 0;
+        margin: 0 0 10px 0; /* Add margin below the task list */
       }
       
       .task-list li {
@@ -154,5 +154,23 @@
   .tab-content h2{
     font-size: 24px;
     text-align: center;
+  }
+
+/* Progress bar styling */
+/* Progress bar styling */
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0%; /* Starts at 0% width */
+    background-color: red; /* Start with red */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    border-radius: 5px;
   }
       

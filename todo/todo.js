@@ -44,4 +44,54 @@ document.querySelectorAll('.tab').forEach(tab => {
       });
     });
   });
+
+  
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Function to calculate and update progress
+    const updateProgress = (taskList) => {
+      const tasks = taskList.querySelectorAll('.task-checkbox');
+      const completedTasks = Array.from(tasks).filter(task => task.checked).length;
+      const progressPercentage = (completedTasks / tasks.length) * 100;
+  
+      // Update the progress bar width
+      const progressBar = taskList.nextElementSibling.querySelector('.progress');
+      progressBar.style.width = `${progressPercentage}%`;
+  
+      // Dynamically change the progress bar color based on progress
+      if (progressPercentage === 0) {
+        progressBar.style.backgroundColor = 'red';
+      } else if (progressPercentage < 50) {
+        progressBar.style.backgroundColor = 'orange';
+      } else if (progressPercentage < 80) {
+        progressBar.style.backgroundColor = 'yellow';
+      } else {
+        progressBar.style.backgroundColor = 'green';
+      }
+    };
+  
+    // Attach event listeners to all task lists
+    document.querySelectorAll('.task-list').forEach(taskList => {
+      const month = taskList.parentElement.id;
+  
+      // Restore progress from localStorage
+      const savedTasks = JSON.parse(localStorage.getItem(month)) || [];
+      taskList.querySelectorAll('.task-checkbox').forEach((checkbox, index) => {
+        checkbox.checked = savedTasks[index] || false;
+      });
+  
+      // Update the progress bar on page load
+      updateProgress(taskList);
+  
+      // Update progress and save state when tasks are checked/unchecked
+      taskList.addEventListener('change', () => {
+        const taskStates = Array.from(taskList.querySelectorAll('.task-checkbox')).map(
+          checkbox => checkbox.checked
+        );
+        localStorage.setItem(month, JSON.stringify(taskStates));
+        updateProgress(taskList);
+      });
+    });
+  });
   
