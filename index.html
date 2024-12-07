@@ -28,14 +28,24 @@
       <li><a href="./indeling/indeling.html">Indeling</a></li>
       <li><a href="./plantcyclus/plantcyclus.html">Plantcyclus</a></li>
       <li><a href="./todo/todo.html">To Do</a></li>
-    </ul>
-      
+      <li class="search-container">
+        <button id="search-toggle" class="search-toggle">
+            <span>&#128269;</span> <!-- Search Icon -->
+        </button>
+        <div id="search-bar" class="search-bar">
+            <input type="text" id="search-input" placeholder="Search..." />
+            <button id="close-search" class="close-search">X</button>
+        </div>
+    </li>
+  </ul>
   </nav> 
   </header>
   
   <!-- Eerste gedeelte van de site -->
   <main>
-  
+    <div id="search-results" class="search-results">
+      <!-- Search results will appear here -->
+  </div>
 <section id="introductie">
   <div class="vlak1">
   <h1>Introductie</h1>
@@ -57,6 +67,11 @@ En er is een zadenbibliotheek, waarbij alle zaden ingevuld staan die gebruikt ku
   <a class="weatherwidget-io" href="https://forecast7.com/en/52d886d00/wolvega/" data-label_1="WOLVEGA" data-label_2="WEATHER" data-icons="Climacons" data-theme="weather_one" >WOLVEGA WEATHER</a>
   </div>
 
+  <div class="clock-widget-container">
+    <h1>Welke tijd is het?</h1>
+   
+<a href="https://logwork.com/current-time-in-wolvega-netherlands-fryslan" class="clock-widget-text" data-timezone="Europe/Amsterdam" data-language="nl" data-textcolor="#ffffff" data-background="#226708" data-digitscolor="#ffffff">Wolvega, Netherlands, Fryslân</a>
+  </div>
 </div>
 
 </div>
@@ -74,6 +89,8 @@ En er is een zadenbibliotheek, waarbij alle zaden ingevuld staan die gebruikt ku
     };
     document.body.appendChild(script);
 </script>
+
+<script src="https://cdn.logwork.com/widget/text.js"></script>
 
   </body>
 </html>
