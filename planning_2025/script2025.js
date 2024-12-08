@@ -1,4 +1,5 @@
 // Define tasks for specific dates
+// Add an Array if you need more tasks on specific days. lik:'1': ['Cleaning the garden', 'Buy groceries'], 
 const tasks = {
     'january': {
       '1': 'Cleaning the garden',
@@ -9,6 +10,9 @@ const tasks = {
       '6': 'Cleaning the garden',
       '7': 'Cleaning the garden',
     },
+    'february': {
+        '26': 'Cleaning the garden'
+    }
     // Add tasks for other months here, if needed
   };
 

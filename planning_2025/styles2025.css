@@ -150,6 +150,7 @@
   
   table.calendar td {
       background-color: #f9f9f9;
+      height: 50px;
   }
   
   table.calendar td:hover {
@@ -166,8 +167,25 @@
     font-size: 0.8rem;
     color: #333;
     margin-top: 4px;
+    cursor: pointer; /* Make it clear tasks are clickable */
   }
   
   .date {
     font-weight: bold;
+    font-size: 1.1rem;
   }
+  
+  .task {
+    padding-left: 5px;
+    list-style-type: none;
+  }
+  
+  .task + .task {
+    margin-top: 4px; /* Space between tasks */
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
