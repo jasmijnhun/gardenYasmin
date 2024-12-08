@@ -59,7 +59,7 @@
     }
 
    /* planning */
-   .time-table{
+   .main-container{
     background-color: #226708e1;
       width: 97%;
       height: min-content;
@@ -73,18 +73,3 @@
       padding: 10px;
       
      } 
-
-   table{
-    background-color: grey;
-    border-radius: 5px;
-    width: 90%;
-margin-left:auto;
-margin-right:auto;
-   }
-   
-
-   .highlight{
-    border-color: red;
-    border-style: solid;
-    border-width: 5px;
-   }
