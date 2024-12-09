@@ -158,6 +158,11 @@
       cursor: pointer;
   }
 
+  .grey{
+    color: rgb(118, 122, 117);
+    font-size:0.8rem ;
+  }
+
   .task-day {
    /* Light blue background for task days */
     position: relative;
