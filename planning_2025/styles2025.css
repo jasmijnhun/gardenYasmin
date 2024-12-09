@@ -145,21 +145,21 @@
   }
   
   table.calendar th {
-      background-color: #f4f4f4;
+      background-color: #dafbe6;
   }
   
   table.calendar td {
-      background-color: #f9f9f9;
+      background-color: #e6f9ed;
       height: 50px;
   }
   
   table.calendar td:hover {
-      background-color: #ddd;
+      background-color: #b9d4bc;
       cursor: pointer;
   }
 
   .task-day {
-    background-color: #f0f8ff; /* Light blue background for task days */
+   /* Light blue background for task days */
     position: relative;
   }
   
@@ -167,12 +167,13 @@
     font-size: 0.8rem;
     color: #333;
     margin-top: 4px;
-    cursor: pointer; /* Make it clear tasks are clickable */
   }
   
   .date {
     font-weight: bold;
     font-size: 1.1rem;
+    margin-bottom: 5px;
+    position:relative;
   }
   
   .task {
@@ -184,8 +185,6 @@
     margin-top: 4px; /* Space between tasks */
   }
   
-  .completed {
-    text-decoration: line-through;
-    color: gray;
-  }
+
+  
   

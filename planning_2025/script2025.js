@@ -1,52 +1,46 @@
-// Define tasks for specific dates
-// Add an Array if you need more tasks on specific days. lik:'1': ['Cleaning the garden', 'Buy groceries'], 
+// Define tasks for specific dates with support for multiple tasks
 const tasks = {
-    'january': {
-      '1': 'Cleaning the garden',
-      '2': 'Cleaning the garden',
-      '3': 'Cleaning the garden',
-      '4': 'Cleaning the garden',
-      '5': 'Cleaning the garden',
-      '6': 'Cleaning the garden',
-      '7': 'Cleaning the garden',
-    },
-    'february': {
-        '26': 'Cleaning the garden'
-    }
-    // Add tasks for other months here, if needed
-  };
-
-  function addTasksToCalendar(month) {
-    const calendar = document.getElementById(month);
-    if (!calendar || !tasks[month]) return;
-
-    const taskData = tasks[month];
-    const cells = calendar.querySelectorAll('td');
-
-    cells.forEach((cell) => {
-      const date = cell.textContent.trim();
-      if (taskData[date]) {
-        cell.innerHTML = `<div class="date">${date}</div><div class="task">${taskData[date]}</div>`;
-        cell.classList.add('task-day'); // Optional: Style task cells differently
-      }
-    });
+  'january': {
+    '1': [{ task: 'Cleaning the garden', color: 'green' }],
+    '2': [{ task: 'Buy groceries', color: 'blue' }],
+    '3': [
+      { task: 'Morning Jog', color: 'red' },
+      { task: 'Team Meeting', color: 'orange' },
+      { task: 'Dinner with friends', color: 'purple' }
+    ],
+    '4': [{ task: 'Cleaning the garden', color: 'green' }],
+    '5': [{ task: 'Workout', color: 'red' }],
+    '6': [{ task: 'Cleaning the garden', color: 'green' }],
+    '7': [{ task: 'Visit family', color: 'purple' }]
+  },
+  'february': {
+    '26': [{ task: 'Cleaning the garden', color: 'green' }]
   }
+  // Add tasks for other months here, if needed
+};
 
-  function showMonth(month) {
-    // Hide all months
-    document.querySelectorAll('.month').forEach((el) => {
-      el.style.display = 'none';
-    });
+function addTasksToCalendar(month) {
+  const calendar = document.getElementById(month);
+  if (!calendar || !tasks[month]) return;
 
-    // Show selected month
-    const selectedMonth = document.getElementById(month);
-    if (selectedMonth) {
-      selectedMonth.style.display = 'block';
-      addTasksToCalendar(month);
+  const taskData = tasks[month];
+  const cells = calendar.querySelectorAll('td');
+
+  cells.forEach((cell) => {
+    const date = cell.textContent.trim();
+    if (taskData[date]) {
+      const tasksForDate = taskData[date];
+      let taskHTML = tasksForDate.map(taskObj =>
+        `<div class="task" style="color: ${taskObj.color};">${taskObj.task}</div>`
+      ).join('');
+
+      cell.innerHTML = `
+        <div class="date">${date}</div>
+        ${taskHTML}`;
+      cell.classList.add('task-day'); // Optional: Style task cells differently
     }
-  }
-
-  // Initialize January by default
-  document.addEventListener('DOMContentLoaded', () => {
-    showMonth('january');
   });
+}
+
+addTasksToCalendar('january');
+addTasksToCalendar('february');
