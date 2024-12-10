@@ -47,4 +47,4 @@ function showMonth(monthId) {
   const selectedMonth = document.getElementById(monthId);
   if (selectedMonth) {
     selectedMonth.style.display = 'block';
-  };
+  }};
