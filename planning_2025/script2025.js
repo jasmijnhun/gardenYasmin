@@ -1,23 +1,17 @@
 // Define tasks for specific dates with support for multiple tasks
 const tasks = {
   'january': {
-    '1': [{ task: 'Cleaning the garden', color: 'green' }],
-    '2': [{ task: 'Buy groceries', color: 'blue' }],
-    '3': [
-      { task: 'Morning Jog', color: 'red' },
-      { task: 'Team Meeting', color: 'orange' },
-      { task: 'Dinner with friends', color: 'purple' }
-    ],
-    '4': [{ task: 'Cleaning the garden', color: 'green' }],
-    '5': [{ task: 'Workout', color: 'red' }],
-    '6': [{ task: 'Cleaning the garden', color: 'green' }],
-    '7': [{ task: 'Visit family', color: 'purple' }]
-  },
-  'february': {
-    '26': [{ task: 'Cleaning the garden', color: 'green' }]
-  }
+    '1': [{ task: 'Start Broccoli', color: 'green' },
+      { task: 'Start Paprika', color: 'red'},
+      { task: 'Start Peper', color: 'blue'},
+      { task: 'Start Zomerprei', color:'darkgreen'},
+      { task: 'Start Tomaten', color:"darkred"},
+      { task: 'Start Uienzaden', color: "purple"}
+    ]
+
+
   // Add tasks for other months here, if needed
-};
+}}
 
 function addTasksToCalendar(month) {
   const calendar = document.getElementById(month);
@@ -42,5 +36,15 @@ function addTasksToCalendar(month) {
   });
 }
 
-addTasksToCalendar('january');
-addTasksToCalendar('february');
+function showMonth(monthId) {
+  // Hide all months
+  const months = document.querySelectorAll('.month');
+  months.forEach((month) => {
+    month.style.display = 'none';
+  });
+
+  // Show the selected month
+  const selectedMonth = document.getElementById(monthId);
+  if (selectedMonth) {
+    selectedMonth.style.display = 'block';
+  };
