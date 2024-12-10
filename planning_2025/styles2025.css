@@ -181,7 +181,6 @@
     text-align: center;
   }
 
-  
   .week-task ul {
     list-style-type: none;
     padding-left: 0;
@@ -197,14 +196,24 @@
     color: #888;
   }
 
-  .finished-date {
+  
+
+  /* Hide the checkbox but keep it functional */
+  input[type="checkbox"] {
     display: none;
-    margin-top: 5px;
   }
 
   .task-label {
     display: inline-block;
     width: 100%;
+    padding: 8px; /* Increase padding to make it easier to click */
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+    border-radius: 4px; /* Make it look like a button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+  .task-label:hover {
+    background-color: #b2dfdb; /* Light background color on hover */
   }
 
   /* Hide the checkbox but keep it functional */
