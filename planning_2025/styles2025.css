@@ -104,13 +104,24 @@
       margin: 0;
   }
   
+  .completed-task {
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+  }
+
   .calendar-tasks{
-    width: 30%;
+    width: 34%;
     background-color: #386C0A;
     border-radius: 8px;
     text-align:center;
     margin:0;
   }
+  
+  .task-details-container ul li {
+    font-size: 1.2rem; /* Adjust size as needed */
+  }
+  
   .month-tabs {
       display: flex;
       
