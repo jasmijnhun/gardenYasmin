@@ -18,13 +18,12 @@ function showMonth(month) {
 document.addEventListener('DOMContentLoaded', () => {
   const tasks = [
     //Week 1
-    { date: '2025-01-02', description: 'Start Broccoli Binnen', completed:false },
-    { date: '2025-01-02', description: 'Start Paprika Binnen', completed:false},
-    { date: '2025-01-02', description: 'Start Pepers Binnen', completed:false},
-    { date: '2025-01-02', description: 'Start Zomerprei Binnen', completed:false},
-    { date: '2025-01-02', description: 'Start Tomaten Binnen', completed:false},
-    { date: '2025-01-02', description: 'Start Uienzaden Binnen', completed:false},
-
+    { date: '2025-01-01', description: 'Start Broccoli Binnen', completed:false },
+    { date: '2025-01-01', description: 'Start Paprika Binnen', completed:false},
+    { date: '2025-01-01', description: 'Start Pepers Binnen', completed:false},
+    { date: '2025-01-01', description: 'Start Zomerprei Binnen', completed:false},
+    { date: '2025-01-01', description: 'Start Tomaten Binnen', completed:false},
+    { date: '2025-01-01', description: 'Start Uienzaden Binnen', completed:false},
     //Week 3
     { date: '2025-01-13', description: 'Start Broccoli Binnen', completed:false},
     { date: '2025-01-13', description: 'Start Zomerprei Binnen', completed:false},
@@ -69,43 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-02-17', description: 'Start Spinazie Binnen', completed:false},
 
     //week 9
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-
-    //week 10
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
-    { date: '', description: '', completed:false},
+    
   ];
 
   const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
@@ -115,13 +78,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // Helper function to calculate week number
   function getWeekNumber(dateString) {
     const date = new Date(dateString);
-    const target = new Date(date.valueOf());
-    const dayNumber = (date.getUTCDay() + 6) % 7; // Adjust so Monday = 0, Sunday = 6
-    target.setUTCDate(target.getUTCDate() - dayNumber + 3); // Nearest Thursday
-    const firstThursday = new Date(target.getUTCFullYear(), 0, 4); // First Thursday of the year
-    const weekNumber = Math.ceil(((target - firstThursday) / 86400000 + 1) / 7);
-    return weekNumber;
-  }
+    
+    // Get the first day of the year
+    const firstDayOfYear = new Date(date.getUTCFullYear(), 0, 1);
+    
+    // Calculate the day number (0-6, where 0 = Monday, 6 = Sunday)
+    const dayOfYear = Math.floor((date - firstDayOfYear) / (24 * 60 * 60 * 1000));
+    
+    // Calculate the week number based on the day of the year
+    const weekNumber = Math.ceil((dayOfYear + 1) / 7);
+    
+    // Adjust for first week of the year (should start from 1)
+    return weekNumber === 0 ? 1 : weekNumber;
+}
+
+
+
 
   // Group tasks by week
   function groupTasksByWeek(tasks) {
@@ -135,6 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     return taskWeekMap;
   }
+  
+  
 
   const tasksByWeek = groupTasksByWeek(tasks);
 
@@ -159,29 +133,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Display tasks for the selected week
   function showTasksForWeek(weekNumber) {
-    taskDetailsList.innerHTML = '';
-    selectedWeekNumberElement.textContent = `Week ${weekNumber}`;
+    taskDetailsList.innerHTML = ''; // Clear previous tasks
+    selectedWeekNumberElement.textContent = `Week ${weekNumber}`; // Update displayed week number
+    
     const tasksForSelectedWeek = tasksByWeek[weekNumber] || [];
 
+    console.log('Tasks for week', weekNumber, tasksForSelectedWeek); // Debugging line to check which tasks are being displayed
+
     if (tasksForSelectedWeek.length > 0) {
-      tasksForSelectedWeek.forEach((task, index) => {
-        const taskElement = document.createElement('li');
-        taskElement.textContent = task.description;
+        tasksForSelectedWeek.forEach((task, index) => {
+            const taskElement = document.createElement('li');
+            taskElement.textContent = task.description;
 
-        // Apply strikethrough for completed tasks
-        if (task.completed) {
-          taskElement.style.textDecoration = 'line-through';
-        }
+            // Apply strikethrough for completed tasks
+            if (task.completed) {
+                taskElement.style.textDecoration = 'line-through';
+            }
 
-        // Add a click event to toggle task completion
-        taskElement.addEventListener('click', () => toggleTaskCompletion(weekNumber, index, taskElement));
+            // Toggle completion when task is clicked
+            taskElement.addEventListener('click', () => toggleTaskCompletion(weekNumber, index, taskElement));
 
-        taskDetailsList.appendChild(taskElement);
-      });
+            taskDetailsList.appendChild(taskElement);
+        });
     } else {
-      taskDetailsList.innerHTML = '<li>Geen taken voor deze week</li>';
+        taskDetailsList.innerHTML = '<li>No tasks for this week</li>';
     }
-  }
+}
+
 
   // Toggle task completion
   function toggleTaskCompletion(weekNumber, taskIndex, taskElement) {
