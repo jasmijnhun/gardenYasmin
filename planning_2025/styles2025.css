@@ -104,11 +104,7 @@
       margin: 0;
   }
   
-  .completed-task {
-    text-decoration: line-through;
-    color: gray;
-    font-style: italic;
-  }
+  
 
   .calendar-tasks{
     width: 34%;
