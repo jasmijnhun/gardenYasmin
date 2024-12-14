@@ -71,12 +71,19 @@
       border-color:#386C0A;
       border-width: 5px;
       padding: 10px;
-      display:flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+     
      } 
 
+.wrapper{
+  display:flex;
+      
+  justify-content: space-between;
+  gap:20px;
+}
+
+     .main-container h1{
+      width: 100%;
+     }
      .calendar-title{
       text-align: center;     /* Centers the text horizontally */
       margin-bottom: 20px;    /* Adds space between the title and the calendar */
@@ -87,15 +94,23 @@
 
 
      .calendar-container {
-      width: 90%;
+      width: 65%;
       background: #386C0A;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       overflow: hidden;
       text-align:center;
       border: 2px #394D29 solid;
+      margin: 0;
   }
   
+  .calendar-tasks{
+    width: 30%;
+    background-color: #386C0A;
+    border-radius: 8px;
+    text-align:center;
+    margin:0;
+  }
   .month-tabs {
       display: flex;
       
@@ -196,7 +211,10 @@
     color: #888;
   }
 
-  
+  .grey{
+    color:grey;
+    
+  }
 
   /* Hide the checkbox but keep it functional */
   input[type="checkbox"] {

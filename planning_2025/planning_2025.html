@@ -36,6 +36,7 @@
   </header>
   <div class="main-container">
     <h1 class="calendar-title">Planning 2025</h1>
+    <div class="wrapper">
     <div class="calendar-container">
       <div class="month-tabs">
         <button class="tab" onclick="showMonth('january')">Januari</button>
@@ -65,25 +66,8 @@
               <th>Zondag</th>
             </tr>
             <tr>
-              <td>Week 1</td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+              <td>Week 1</td><td class="grey">30</td><td class="grey">31</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
             </tr>
-            <tr class="task-row">
-              <td colspan="8" class="week-task">
-                <p>WEek 1 taken</p>
-                <ul>
-                  <li class="task" id="task1">
-                    <input type="checkbox" id="checkbox1">
-                    <label for="checkbox1" class="task-label">Task 1: Organize the garden tools</label>
-                  </li>
-                  <li class="task" id="task2">
-                    <input type="checkbox" id="checkbox2">
-                    <label for="checkbox2" class="task-label">Task 2: Prepare soil for planting</label>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-
-
             <tr>
               <td>Week 2</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
             </tr>
@@ -94,7 +78,7 @@
               <td>Week 4</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
             </tr>
             <tr>
-              <td>Week 5</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+              <td>Week 5</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="grey">1</td><td class="grey">2</td>
             </tr>
           </table>
       </div>
@@ -113,7 +97,7 @@
               <th>Zondag</th>
             </tr>
             <tr>
-              <td>Week 5</td><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td>
+              <td>Week 5</td><td class="grey">27</td><td class="grey">28</td><td class="grey">29</td><td class="grey">30</td><td class="grey">31</td><td>1</td><td>2</td>
             </tr>
             <tr>
               <td>Week 6</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
@@ -125,7 +109,7 @@
               <td>Week 8</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
             </tr>
             <tr>
-              <td>Week 9</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td></td><td></td>
+              <td>Week 9</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td class="grey">1</td><td class="grey">2</td>
             </tr>
           </table>
       </div>
@@ -144,7 +128,7 @@
               <th>Zondag</th>
             </tr>
             <tr>
-              <td>Week 9</td><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td>
+              <td>Week 9</td><td class="grey">24</td><td class="grey">25</td><td class="grey">26</td><td class="grey">27</td><td class="grey">28</td><td>1</td><td>2</td>
             </tr>
             <tr>
               <td>Week 10</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
@@ -159,7 +143,7 @@
               <td>Week 13</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
             </tr>
             <tr>
-              <td>Week 14</td><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>Week 14</td><td>31</td><td class="grey">1</td><td class="grey">2</td><td class="grey">3</td><td class="grey">4</td><td class="grey">5</td><td class="grey">6</td>
             </tr>
           </table>
       </div>
@@ -178,7 +162,7 @@
               <th>Zondag</th>
             </tr>
             <tr>
-              <td>Week 14</td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+              <td>Week 14</td><td class="grey">31</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
             </tr>
             <tr>
               <td>Week 15</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
@@ -190,7 +174,7 @@
               <td>Week 17</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
             </tr>
             <tr>
-              <td>Week 18</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td>
+              <td>Week 18</td><td>28</td><td>29</td><td>30</td><td class="grey">1</td><td class="grey">2</td><td class="grey">3</td><td class="grey">4</td>
             </tr>
           </table>
       </div>
@@ -209,7 +193,7 @@
               <th>Zondag</th>
             </tr>
             <tr>
-              <td>Week 18</td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
+              <td>Week 18</td><td class="grey">28</td><td class="grey">29</td><td class="grey">30</td><td>1</td><td>2</td><td>3</td><td>4</td>
             </tr>
             <tr>
               <td>Week 19</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
@@ -221,7 +205,7 @@
               <td>Week 21</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
             </tr>
             <tr>
-              <td>Week 22</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td>
+              <td>Week 22</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="grey">1</td>
             </tr>
           </table>
       </div>
@@ -240,7 +224,7 @@
               <th>Zondag</th>
             </tr>
             <tr>
-              <td>Week 22</td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td>
+              <td>Week 22</td><td class="grey">26</td><td class="grey">27</td><td class="grey">28</td><td class="grey">29</td><td class="grey">30</td><td class="grey">31</td><td>1</td>
             </tr>
             <tr>
               <td>Week 23</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
@@ -255,7 +239,7 @@
               <td>Week 26</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
             </tr>
             <tr>
-              <td>Week 27</td><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td>Week 27</td><td>30</td><td class="grey">1</td><td class="grey">2</td><td class="grey">3</td><td class="grey">4</td><td class="grey">5</td><td class="grey">6</td>
             </tr>
           </table>
       </div>
@@ -274,7 +258,7 @@
               <th>Zondag</th>
             </tr>
             <tr>
-              <td>Week 27</td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+              <td>Week 27</td><td class="grey">30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
             </tr>
             <tr>
               <td>Week 28</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
@@ -295,7 +279,7 @@
         <h2>Augustus</h2>
           <table class="calendar">
             <tr>
-              <td>Weeknr.</td>
+              <th>Weeknr.</th>
               <th>Maandag</th>
               <th>Dinsdag</th>
               <th>Woensdag</th>
@@ -447,8 +431,15 @@
       </div>
 
     </div>
+
+    <div class="calendar-tasks">
+      <h2>Taken</h2>
+      <div class="content-container">
+
+      </div>
+    </div>
   </div>
-  
+  </div>
   <script src="../planning_2025/script2025.js"></script>
   </body>
 </html>
