@@ -184,3 +184,7 @@ saveBtn.addEventListener('click', saveLayout);
 loadBtn.addEventListener('click', loadLayout);
 resetBtn.addEventListener('click', resetLayout);
 saveImageBtn.addEventListener('click', saveAsImage);
+
+
+
+/// new
