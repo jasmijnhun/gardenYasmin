@@ -89,3 +89,39 @@ function toggleYear(yearHeader) {
 document.addEventListener('DOMContentLoaded', function () {
   filterPosts('All', 'All');
 });
+
+// Select all relevant elements
+const monthItems = document.querySelectorAll('.month-list li');
+const yearItems = document.querySelectorAll('.year-group h4');
+const allSelector = document.getElementById('all-selector');
+
+// Add click event to "All"
+allSelector.addEventListener('click', () => {
+  // Remove active class from all months and years
+  document.querySelectorAll('.active').forEach(item => item.classList.remove('active'));
+  // Highlight "All"
+  allSelector.classList.add('active');
+});
+
+// Add click event to months
+monthItems.forEach(month => {
+  month.addEventListener('click', () => {
+    // Remove active class from all months and years
+    document.querySelectorAll('.active').forEach(item => item.classList.remove('active'));
+    // Highlight the clicked month
+    month.classList.add('active');
+    // Highlight the corresponding year
+    const yearGroup = month.closest('.year-group').querySelector('h4');
+    yearGroup.classList.add('active');
+  });
+});
+
+// Add click event to years
+yearItems.forEach(year => {
+  year.addEventListener('click', () => {
+    // Remove active class from all months, years, and "All"
+    document.querySelectorAll('.active').forEach(item => item.classList.remove('active'));
+    // Highlight the clicked year
+    year.classList.add('active');
+  });
+});
