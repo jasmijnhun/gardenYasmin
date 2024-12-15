@@ -37,19 +37,84 @@
 <body>
     <div class="main-container">
       <div class="tab-container">
-        <button class="tab-button">Journal</button>
-        <button class="tab-button">Zaaidata</button>
-        <button class="tab-button">Oogstdata</button>
-        <button class="tab-button">Uitgaven</button>
+        <div id="tabs">
+          <button class="tab-button" >Journal</button>
+          <button class="tab-button" >Zaaidata</button>
+          <button class="tab-button" data-tab="oogstdata">Oogstdata</button>
+          <button class="tab-button" data-tab="uitgaven">Uitgaven</button>
+        </div>
       </div>
       <div class="content-container">
-        <div class="content" id="journal">
+        <div class="tab-content">
+          <div class="tab-title">
+          <h2>Journal</h2>
+          </div>
+          <div id="blog-posts">
+            <h2>Recent Posts</h2>
+            
+            <div class="post">
+                <h3 class="post-title">My First Journal Entry</h3>
+                <p class="post-date">Posted on January 1, 2024</p>
+                <p class="post-content">
+                    This is my first entry in my garden journal! I'm excited to track the progress of my garden over the next few months.
+                </p>
+            </div>
+
+            <div class="post">
+                <h3 class="post-title">Winter Preparation</h3>
+                <p class="post-date">Posted on December 25, 2023</p>
+                <p class="post-content">
+                    Preparing the garden for winter. Covering sensitive plants and planting some late-season vegetables.
+                </p>
+            </div>
+
+            <div class="post">
+                <h3 class="post-title">Spring is Coming</h3>
+                <p class="post-date">Posted on March 15, 2024</p>
+                <p class="post-content">
+                    Looking forward to the warmer weather. Starting seeds indoors and preparing the beds for planting.
+                </p>
+            </div>
         </div>
-        <div class="content" id="zaaidata">
         </div>
-        <div class="content" id="oogstdata">
+    
+        <div class="tab-content" >
+          <div class="tab-title">
+          <h2>Zaaidata</h2>
+          </div>
+          <div class="zaaitabel">
+            <table>
+              <thead>
+                <tr>
+                  <th>Plant</th>
+                  <th>Zaaidatum</th>
+                  <th>Hoeveelheid</th>
+                  <th>Notities</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="content" id="uitgaven">
+    
+        <div class="tab-content">
+          <div class="tab-title">
+          <h2>Oogstdata</h2>
+          </div>
+
+        </div>
+    
+        <div class="tab-content">
+          <div class="tab-title">
+          <h2>Uitgaven</h2>
+          </div>
         </div>
       </div>
 
