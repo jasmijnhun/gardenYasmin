@@ -204,7 +204,41 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-07-07', description: 'Start Courgette Binnen', completed:false},
     { date: '2025-07-07', description: 'Start Meloenen Binnen', completed:false},
 //week 29
-    { date: '2025-07-14', description: '', completed:false},
+    { date: '2025-07-14', description: 'Start Pluksla Binnen', completed:false},
+//week 30
+    { date: '2025-07-21', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-07-21', description: 'Start Radicchio Binnen', completed:false},
+    { date: '2025-07-21', description: 'Start Kropsla Binnen', completed:false},
+    { date: '2025-07-21', description: 'STart Pluksla Binnen', completed:false},
+    { date: '2025-07-21', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-07-21', description: 'Start Amsoi Binnen', completed:false},
+// week 31
+    { date: '2025-07-28', description: 'Start Boerenkool Binnen', completed:false},
+    { date: '2025-07-28', description: 'Start Pluksla Binnen', completed:false},
+//week 32
+    { date: '2025-08-04', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-08-04', description: 'Start Bloemkool Binnen', completed:false},
+    { date: '2025-08-04', description: 'Start Radicchio Binnen', completed:false},
+    { date: '2025-08-04', description: 'Start Kropsla Binnen', completed:false},
+    { date: '2025-08-04', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-08-04', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-08-04', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-08-04', description: 'Start Amsoi Binnen', completed:false},
+//week 33
+    { date: '2025-08-11', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-08-11', description: 'Start Spinazie Binnen', completed:false},
+//week 34
+    { date: '2025-08-18', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Bloemkool Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Boerenkool Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Radicchio Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Kropsla Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-08-18', description: 'Start Amsoi Binnen', completed:false},
+//week 35
+    { date: '2025-08-18', description: '', completed:false},
   ];
 
   const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
