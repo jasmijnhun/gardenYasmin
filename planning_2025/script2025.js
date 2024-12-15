@@ -141,8 +141,70 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-04-07', description: 'Start Pompoen Binnen', completed:false},
     { date: '2025-04-07', description: 'Start Watermeloen Binnen', completed:false},
 //week 16
-
-
+    { date: '2025-04-14', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-04-14', description: 'Start Courgette Binnen', completed:false},
+    { date: '2025-04-14', description: 'Start Honingmeloen Binnen', completed:false},
+    { date: '2025-04-14', description: 'Start Komkommer Binnen', completed:false},
+    { date: '2025-04-14', description: 'Start Maïs Binnen', completed:false},
+    { date: '2025-04-14', description: 'Start Meloenen Binnen', completed:false},
+//week 17
+    { date: '2025-04-21', description: 'Start Uienzaden Binnen', completed:false},
+    { date: '2025-04-21', description: 'Start Chinese Kool Binnen', completed:false},
+    { date: '2025-04-21', description: 'Start Luffa Binnen', completed:false},
+    { date: '2025-04-21', description: 'Start Rode Kool Binnen', completed:false},
+    { date: '2025-04-21', description: 'Start Bieten Binnen', completed:false},
+//week 18
+    { date: '2025-04-28', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-04-28', description: 'Start Augurk Binnen', completed:false},
+    { date: '2025-04-28', description: 'Start Cantaloupe Binnen', completed:false},
+    { date: '2025-04-28', description: 'Start Maïs Binnen', completed:false},
+    { date: '2025-04-28', description: 'Start Watermeloen Binnen', completed:false},
+//week 19
+    { date: '2025-05-05', description: 'Start Bieten Binnen', completed:false},
+    { date: '2025-05-05', description: 'Start Komkommer Binnen', completed:false},
+    { date: '2025-05-05', description: 'Start Meloenen Binnen', completed:false},
+    { date: '2025-05-05', description: 'Start Pompoen Binnen', completed:false},
+//week 20
+    { date: '2025-05-12', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-05-12', description: 'Start Maïs Binnen', completed:false},
+//week 21
+    { date: '2025-05-19', description: 'Start Augurk Binnen', completed:false},
+    { date: '2025-05-19', description: 'Start Bieten Binnen', completed:false},
+    { date: '2025-05-19', description: 'Start Cantaloupe Binnen', completed:false},
+    { date: '2025-05-19', description: 'Start Watermeloen Binnen', completed:false},
+//week 22
+    { date: '2025-05-26', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-05-26', description: 'Start Courgette Binnen', completed:false},
+    { date: '2025-05-26', description: 'Start Komkommer Binnen', completed:false},
+    { date: '2025-05-26', description: 'Start Maïs Binnen', completed:false},
+    { date: '2025-05-26', description: 'Start Meloenen Binnen', completed:false},
+//week 23
+    { date: '2025-06-02', description: 'Start Bieten Binnen', completed:false},
+    { date: '2025-06-02', description: 'Start Pompoen Binnen', completed:false},
+    //week 24
+    { date: '2025-06-09', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-06-09', description: 'Start Maïs Binnen', completed:false},
+    //week 25
+    { date: '2025-06-16', description: 'Start Bieten Binnen', completed:false},
+    { date: '2025-06-16', description: 'Start Komkommer Binnen', completed:false},
+    { date: '2025-06-16', description: 'Start Meloenen Binnen', completed:false},
+//week 26
+    { date: '2025-06-23', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-06-23', description: 'Start Maïs Binnen', completed:false},
+//week 27
+    { date: '2025-06-30', description: 'Start Bieten Binnen', completed:false},
+//week 28
+    { date: '2025-07-07', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Boerenkool Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Radicchio Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Kropsla Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Courgette Binnen', completed:false},
+    { date: '2025-07-07', description: 'Start Meloenen Binnen', completed:false},
+//week 29
+    { date: '2025-07-14', description: '', completed:false},
   ];
 
   const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
