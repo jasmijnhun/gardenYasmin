@@ -68,7 +68,81 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-02-17', description: 'Start Spinazie Binnen', completed:false},
 
     //week 9
-    
+    { date: '2025-02-24', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Paprika Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Pepers Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Winterprei Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Tomaten Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Uienzaden Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Bloemkool Binnen', completed:false},
+    { date: '2025-02-24', description: 'STart Chinese Kool Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Luffa Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Radicchio Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Rode Kool Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Kropsla Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Spruitjes Binnen', completed:false},
+    //week 10 
+    { date: '2025-03-03', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Courgette Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Honingmeloen Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Komkommer Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Maïs Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Meloenen Binnen', completed:false},
+//week 11
+    { date: '2025-03-10', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Winterprei Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Bloemkool Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Boerenkool Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Chinese Kool Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Radicchio Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Rode Kool Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Kropsla Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Bieten Binnen', completed:false},
+//week 12
+    { date: '2025-03-17', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-03-17', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-03-17', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-03-17', description: 'Start Maïs Binnen', completed:false},
+//week 13
+    { date: '2025-03-24', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Paprika Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Pepers Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Tomaten Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Uienzaden Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Bloemkool Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Chinese Kool Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Luffa Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Radicchio Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Rode Kool Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Kropsla Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Pluksla Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Bieten Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Honingmeloen Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Komkommer Binnen', completed:false},
+    { date: '2025-03-24', description: 'Start Meloenen Binnen', completed:false},
+//week 14
+    { date: '2025-03-31', description: 'Start Amsoi Binnen', completed:false},
+    { date: '2025-03-31', description: 'Start Maïs Binnen', completed:false},
+//week 15
+    { date: '2025-04-07', description: 'Start Chinese Kool Binnen', completed:false},
+    { date: '2025-04-07', description: 'Start Rode Kool Binnen', completed:false},
+    { date: '2025-04-07', description: 'Start Augurken Binnen', completed:false},
+    { date: '2025-04-07', description: 'Start Bieten Binnen', completed:false},
+    { date: '2025-04-07', description: 'Start Cantaloupe Binnen', completed:false},
+    { date: '2025-04-07', description: 'Start Pompoen Binnen', completed:false},
+    { date: '2025-04-07', description: 'Start Watermeloen Binnen', completed:false},
+//week 16
+
+
   ];
 
   const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
@@ -131,51 +205,86 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('tasksByWeek', JSON.stringify(tasksByWeek));
   }
 
+  
+
+  function updateWeekRowColor(weekNumber) {
+    const weekRow = document.querySelector(`tr[data-week-number='${weekNumber}']`);
+    const tasksForSelectedWeek = tasksByWeek[weekNumber] || [];
+  
+    if (weekRow) {
+      const allTasksCompleted = tasksForSelectedWeek.length > 0 && tasksForSelectedWeek.every(task => task.completed);
+      if (allTasksCompleted) {
+        weekRow.classList.add('week-completed');
+    } else {
+        weekRow.classList.remove('week-completed');
+    }
+    }
+  }
+
+
   // Display tasks for the selected week
   function showTasksForWeek(weekNumber) {
-    taskDetailsList.innerHTML = ''; // Clear previous tasks
-    selectedWeekNumberElement.textContent = `Week ${weekNumber}`; // Update displayed week number
+    taskDetailsList.innerHTML = '';
+    selectedWeekNumberElement.textContent = `week ${weekNumber}`;
     
     const tasksForSelectedWeek = tasksByWeek[weekNumber] || [];
-
-    console.log('Tasks for week', weekNumber, tasksForSelectedWeek); // Debugging line to check which tasks are being displayed
-
+    const weekRow = document.querySelector(`tr[data-week-number='${weekNumber}']`);
+  
+    // Debugging: Check if the week row exists
+    console.log(`Week Row for week ${weekNumber}:`, weekRow);
+  
+    // Populate task details
     if (tasksForSelectedWeek.length > 0) {
-        tasksForSelectedWeek.forEach((task, index) => {
-            const taskElement = document.createElement('li');
-            taskElement.textContent = task.description;
-
-            // Apply strikethrough for completed tasks
-            if (task.completed) {
-                taskElement.style.textDecoration = 'line-through';
-            }
-
-            // Toggle completion when task is clicked
-            taskElement.addEventListener('click', () => toggleTaskCompletion(weekNumber, index, taskElement));
-
-            taskDetailsList.appendChild(taskElement);
+      tasksForSelectedWeek.forEach((task, index) => {
+        const taskElement = document.createElement('li');
+        taskElement.textContent = task.description;
+  
+        // Apply strikethrough for completed tasks
+        if (task.completed) {
+          taskElement.style.textDecoration = 'line-through';
+        }
+  
+        // Add a click event to toggle task completion
+        taskElement.addEventListener('click', () => {
+          toggleTaskCompletion(weekNumber, index, taskElement);
         });
+  
+        taskDetailsList.appendChild(taskElement);
+      });
     } else {
-        taskDetailsList.innerHTML = '<li>No tasks for this week</li>';
+      taskDetailsList.innerHTML = '<li>Geen taken voor deze week</li>';
     }
-}
+  
+    // Check and update the background color for this week row
+    updateWeekRowColor(weekNumber);
+  }
+  
+
+  
+  
 
 
-  // Toggle task completion
+
   function toggleTaskCompletion(weekNumber, taskIndex, taskElement) {
     const task = tasksByWeek[weekNumber][taskIndex];
     task.completed = !task.completed; // Toggle completion status
-
+    
     // Update the task's appearance based on its state
     if (task.completed) {
-      taskElement.style.textDecoration = 'line-through'; // Add strikethrough
+      taskElement.style.textDecoration = 'line-through';
     } else {
-      taskElement.style.textDecoration = 'none'; // Remove strikethrough
+      taskElement.style.textDecoration = 'none';
     }
-
-    // Save updated tasks to localStorage
+  
+    // Update the week's row color
+    updateWeekRowColor(weekNumber);
+  
+    // Save updated tasks to local storage
     saveTasksToLocalStorage();
   }
+  
+
+   
 
   // Add event listeners to calendar rows
   weekRows.forEach(row => {

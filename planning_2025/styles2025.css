@@ -104,7 +104,21 @@
       margin: 0;
   }
   
-  
+  tr[data-week-number]:not([style]) {
+    background-color: inherit;
+}
+
+.week-completed td {
+  background-color: lightgreen !important;
+}
+
+tr[data-week-number] {
+  overflow: visible;
+}
+
+  table {
+    background-color: transparent;
+}
 
   .calendar-tasks{
     width: 34%;
