@@ -38,47 +38,69 @@
     <div class="main-container">
       <div class="tab-container">
         <div id="tabs">
-          <button class="tab-button" >Journal</button>
-          <button class="tab-button" >Zaaidata</button>
-          <button class="tab-button" data-tab="oogstdata">Oogstdata</button>
-          <button class="tab-button" data-tab="uitgaven">Uitgaven</button>
-        </div>
+          <button class="tab-button" onclick="showTab('journal')">Journal</button>
+          <button class="tab-button" onclick="showTab('zaaidata')">Zaaidata</button>
+          <button class="tab-button" onclick="showTab('oogstdata')">Oogstdata</button>
+          <button class="tab-button" onclick="showTab('uitgaven')">Uitgaven</button>
+      </div>
       </div>
       <div class="content-container">
-        <div class="tab-content">
+        <div class="tab-default-content" id="default-content">
+          <h1>Welcome to the Logbook</h1>
+          <p>Select a tab on the left to view its content.</p>
+      </div>
+
+
+        <div class="tab-content" id="journal-tab">
           <div class="tab-title">
           <h2>Journal</h2>
           </div>
-          <div id="blog-posts">
-            <h2>Recent Posts</h2>
-            
-            <div class="post">
-                <h3 class="post-title">My First Journal Entry</h3>
-                <p class="post-date">Posted on January 1, 2024</p>
-                <p class="post-content">
-                    This is my first entry in my garden journal! I'm excited to track the progress of my garden over the next few months.
-                </p>
+          <div class="journal-container">
+            <!-- Blog Posts -->
+            <div class="blog-posts">
+              <div class="blog-post" data-month="January" data-year="2024">
+                <h2>Blog Post Title - January 2024</h2>
+                <p>This is a blog post for January 2024. Details about January go here...</p>
+              </div>
+              <div class="blog-post" data-month="February" data-year="2024">
+                <h2>Blog Post Title - February 2024</h2>
+                <p>This is a blog post for February 2024. Details about February go here...</p>
+              </div>
+              <div class="blog-post" data-month="March" data-year="2023">
+                <h2>Blog Post Title - March 2023</h2>
+                <p>This is a blog post for March 2023. Details about March go here...</p>
+              </div>
+              <div class="blog-post" data-month="April" data-year="2023">
+                <h2>Blog Post Title - April 2023</h2>
+                <p>This is a blog post for April 2023. Details about April go here...</p>
+              </div>
             </div>
-
-            <div class="post">
-                <h3 class="post-title">Winter Preparation</h3>
-                <p class="post-date">Posted on December 25, 2023</p>
-                <p class="post-content">
-                    Preparing the garden for winter. Covering sensitive plants and planting some late-season vegetables.
-                </p>
+        
+            <!-- Month Selector -->
+            <div class="month-selector">
+              <h3>Select Month and Year</h3>
+              <ul>
+                <li onclick="filterPosts('All', 'All')">All</li>
+                <li class="year-group">
+                  <h4 onclick="toggleYear(this)">2024</h4>
+                  <ul class="month-list">
+                    <li onclick="filterPosts('January', '2024')">January</li>
+                    <li onclick="filterPosts('February', '2024')">February</li>
+                  </ul>
+                </li>
+                <li class="year-group">
+                  <h4 onclick="toggleYear(this)">2023</h4>
+                  <ul class="month-list">
+                    <li onclick="filterPosts('March', '2023')">March</li>
+                    <li onclick="filterPosts('April', '2023')">April</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-
-            <div class="post">
-                <h3 class="post-title">Spring is Coming</h3>
-                <p class="post-date">Posted on March 15, 2024</p>
-                <p class="post-content">
-                    Looking forward to the warmer weather. Starting seeds indoors and preparing the beds for planting.
-                </p>
-            </div>
-        </div>
+          </div>
         </div>
     
-        <div class="tab-content" >
+        <div class="tab-content" id="zaaidata-tab">
           <div class="tab-title">
           <h2>Zaaidata</h2>
           </div>
@@ -104,14 +126,14 @@
           </div>
         </div>
     
-        <div class="tab-content">
+        <div class="tab-content" id="oogstdata-tab">
           <div class="tab-title">
           <h2>Oogstdata</h2>
           </div>
 
         </div>
     
-        <div class="tab-content">
+        <div class="tab-content" id="uitgaven-tab">
           <div class="tab-title">
           <h2>Uitgaven</h2>
           </div>

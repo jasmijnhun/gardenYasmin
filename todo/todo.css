@@ -74,6 +74,24 @@
       overflow-x:hidden;
     }
 
+    .content-container{
+      width:100%;
+      margin-right:10px;
+    }
+
+    .tab-default-content {
+      display: block; /* Show by default */
+      padding: 20px;
+      background-color: #226708e1;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+  }
+
+  .tab-default-content.hidden {
+    display: none; /* Hide when the "hidden" class is added */
+}
+
 /* Tabs Container */
 .tabs-container {
   width: 150px; /* Adjusted width to accommodate more space for the text */
@@ -141,7 +159,9 @@
   overflow-y: auto; /* Allow scrolling if content overflows vertically */
   width: 100%;
   margin-top:15px;
+  margin-bottom:15px;
 }
+
 
 
 .tab-content.active {
@@ -152,8 +172,77 @@
 
 .tab-title{
   text-align:center;
-width:1330px;
+
 }
+
+/*journalll*/
+.month-selector ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.month-selector .year-group {
+  margin-bottom: 10px;
+}
+
+.month-selector h4 {
+  margin: 0;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.month-selector .month-list {
+  list-style: none;
+  padding-left: 15px; /* Indent months under year */
+  margin-top: 5px;
+  display: none; /* Collapsed by default */
+}
+
+.month-selector .month-list li {
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #7b9a43;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.month-selector .month-list li:hover {
+  background-color: #4caf50;
+}
+
+/* Active State */
+.month-selector .active {
+  background-color: #ffbb33;
+  color: black;
+}
+
+/* Ensure Journal Container Layout */
+.journal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.blog-posts {
+  flex: 3;
+}
+
+.month-selector {
+  flex: 1;
+  background-color: #394d29;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+
 
 /* tabel zaaidata */
 table{
