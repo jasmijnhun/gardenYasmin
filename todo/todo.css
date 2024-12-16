@@ -265,10 +265,40 @@
 .zaaitabel table{
   width: 100%;
 }
-
-.zaaitabel th:first-child{
-  width:20%;
+.oogsttabel table{
+  width: 100%;
 }
-.zaaitabel th: :nth-child(2){
-  width:
+
+.uitgaventabel table{
+  width:100%;
+  border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.uitgaventabel table td:first-child{
+  font-style: italic;
+}
+.uitgaventabel table tr:first-child{
+  text-align:left;
+}
+.uitgaventabel th, .uitgaventabel td{
+  border: 1px solid #2d4b1e;
+  padding: 8px;
+}
+.uitgaventabel th{
+  background-color: #3a5a1c; /* Dark green for headers */
+    color: #fff; /* White text for contrast */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.uitgaventabel tr:nth-child(even){
+  background-color: #b7d6a5;
+}
+.uitgaventabel tr:nth-child(odd){
+  background-color: #d4e7c5;
+}
+.uitgaventabel tr:hover{
+  background-color: #8bb96c;
+  color: #000;
+  transition:background-color 0.3s ease;
 }
