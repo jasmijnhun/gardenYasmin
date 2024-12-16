@@ -302,3 +302,8 @@
   color: #000;
   transition:background-color 0.3s ease;
 }
+
+.total-row td{
+  color:red;
+  background-color: black;
+}
