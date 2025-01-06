@@ -18,12 +18,15 @@ function showMonth(month) {
 document.addEventListener('DOMContentLoaded', () => {
   const tasks = [
     //Week 1
-    { date: '2025-01-01', description: 'Start Broccoli Binnen', completed:false },
+    { date: '2025-01-01', description: 'Start Broccoli Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Paprika Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Pepers Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Zomerprei Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Tomaten Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Uienzaden Binnen', completed:false},
+
+    //week 2
+    { date: '2025-01-06', description: 'Start Citroengras Binnen', completed:false},
     //Week 3
     { date: '2025-01-13', description: 'Start Broccoli Binnen', completed:false},
     { date: '2025-01-13', description: 'Start Zomerprei Binnen', completed:false},
