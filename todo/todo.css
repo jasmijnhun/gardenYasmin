@@ -249,7 +249,25 @@
 
 .blog-posts {
   flex: 3;
+  display: flex;
+  flex-direction: column;
 }
+
+.imagesblogpost{
+  float:right;
+  width: 100%;
+  display: flex;
+  gap:20px;
+}
+
+
+.imagesblogpost img{
+  width: 25%;
+  margin: 10px; /* Adds spacing between text and image */
+  margin-bottom: 10px; /* Adds spacing below images */
+  max-height: 300px; /* Limits the height to avoid overly large images */
+gap: 20px;
+  }
 
 .month-selector {
   flex: 1;
@@ -264,11 +282,25 @@
 /*zaaidata */
 .zaaitabel table{
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
 }
+
+.zaaitabel th, .zaaitabel td{
+  border: 1px solid #2d4b1e;
+  padding:8px;
+}
+
+.zaaitabel th{
+  border-bottom: 3px solid #2d4b1e;
+}
+
+
 .oogsttabel table{
   width: 100%;
 }
-
+/*uitgaventable*/
 .uitgaventabel table{
   width:100%;
   border-collapse: collapse;
@@ -307,3 +339,5 @@
   color:red;
   background-color: black;
 }
+
+
