@@ -12,6 +12,83 @@ function showMonth(month) {
   }
 }
 
+// Function to get the start of the week for a given date (Monday)
+function getWeekStart(date) {
+  const d = new Date(date);
+  const day = d.getDay(); // 0 = Sunday, 1 = Monday, etc.
+  const diff = d.getDate() - day + (day === 0 ? -6 : 1); // Adjust for Monday as the start of the week
+  return new Date(d.setDate(diff));
+}
+
+// Function to group tasks by week
+function groupTasksByWeek(tasks) {
+  const weeks = {};
+
+  tasks.forEach(task => {
+    const weekStart = getWeekStart(task.date).toISOString().split('T')[0];
+    if (!weeks[weekStart]) {
+      weeks[weekStart] = [];
+    }
+    weeks[weekStart].push(task);
+  });
+
+  return weeks;
+}
+
+// Render tasks by week
+function renderTasks(tasks) {
+  const weeks = groupTasksByWeek(tasks);
+
+  // Clear existing content
+  const taskContainer = document.getElementById('task-container');
+  taskContainer.innerHTML = '';
+
+  // Display each week's tasks
+  for (const [weekStart, tasks] of Object.entries(weeks)) {
+    const weekDiv = document.createElement('div');
+    weekDiv.classList.add('week');
+
+    const weekHeader = document.createElement('h3');
+    weekHeader.textContent = `Week starting ${weekStart}`;
+    weekDiv.appendChild(weekHeader);
+
+    tasks.forEach(task => {
+      const taskDiv = document.createElement('div');
+      taskDiv.classList.add('task');
+      taskDiv.textContent = task.description;
+      weekDiv.appendChild(taskDiv);
+    });
+
+    taskContainer.appendChild(weekDiv);
+  }
+}
+
+const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
+const taskDetailsList = document.getElementById('task-details-list');
+const selectedWeekNumberElement = document.getElementById('selected-week-number');
+
+// Helper function to calculate ISO week number
+function getWeekNumber(date) {
+const currentDate = new Date(date);
+
+// Set the date to the first day of the year (January 1st)
+const firstDayOfYear = new Date(currentDate.getFullYear(), 0, 1);
+
+// Get the day of the week for the first day of the year (0 = Sunday, 1 = Monday, etc.)
+const dayOfWeek = firstDayOfYear.getDay();
+
+// Adjust the first day of the year to the closest Thursday (ISO 8601)
+const firstThursday = new Date(currentDate.getFullYear(), 0, 4); // First Thursday of the year
+firstThursday.setDate(4 - firstThursday.getDay() + (firstThursday.getDay() === 0 ? -6 : 1)); // Adjust to Thursday
+
+// Calculate the difference in days between the current date and the first Thursday
+const dayDifference = Math.floor((currentDate - firstThursday) / (24 * 60 * 60 * 1000));
+
+// Now calculate the ISO week number
+const weekNumber = Math.ceil((dayDifference + 1) / 7);
+
+return weekNumber;
+}
 
 
 
@@ -280,32 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   
-  const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
-  const taskDetailsList = document.getElementById('task-details-list');
-  const selectedWeekNumberElement = document.getElementById('selected-week-number');
 
-// Helper function to calculate ISO week number
-function getWeekNumber(date) {
-  const currentDate = new Date(date);
-
-  // Set the date to the first day of the year (January 1st)
-  const firstDayOfYear = new Date(currentDate.getFullYear(), 0, 1);
-
-  // Get the day of the week for the first day of the year (0 = Sunday, 1 = Monday, etc.)
-  const dayOfWeek = firstDayOfYear.getDay();
-
-  // Adjust the first day of the year to the closest Thursday (ISO 8601)
-  const firstThursday = new Date(currentDate.getFullYear(), 0, 4); // First Thursday of the year
-  firstThursday.setDate(4 - firstThursday.getDay() + (firstThursday.getDay() === 0 ? -6 : 1)); // Adjust to Thursday
-
-  // Calculate the difference in days between the current date and the first Thursday
-  const dayDifference = Math.floor((currentDate - firstThursday) / (24 * 60 * 60 * 1000));
-
-  // Now calculate the ISO week number
-  const weekNumber = Math.ceil((dayDifference + 1) / 7);
-
-  return weekNumber;
-}
 
 
   // Group tasks by week
