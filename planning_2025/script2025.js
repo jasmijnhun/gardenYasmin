@@ -35,6 +35,8 @@ function groupTasksByWeek(tasks) {
   return weeks;
 }
 
+
+
 // Render tasks by week
 function renderTasks(tasks) {
   const weeks = groupTasksByWeek(tasks);
@@ -54,14 +56,18 @@ function renderTasks(tasks) {
 
     tasks.forEach(task => {
       const taskDiv = document.createElement('div');
-      taskDiv.classList.add('task');
+      taskDiv.classList.add('task');           
       taskDiv.textContent = task.description;
+       // Apply color to the task text
+       taskDiv.style.color = task.color;
       weekDiv.appendChild(taskDiv);
     });
 
     taskContainer.appendChild(weekDiv);
   }
 }
+
+
 
 const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
 const taskDetailsList = document.getElementById('task-details-list');
@@ -95,8 +101,8 @@ return weekNumber;
 document.addEventListener('DOMContentLoaded', () => {
   const tasks = [
     //Week 1 
-    { date: '2025-01-01', description: 'Start Broccoli Binnen', completed:false},
-    { date: '2025-01-01', description: 'Start Paprika Binnen', completed:false},
+    { date: '2025-01-01', description: 'Start Broccoli Binnen', completed:false,},
+    { date: '2025-01-01', description: 'Start Paprika Binnen', completed:false,},
     { date: '2025-01-01', description: 'Start Pepers Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Zomerprei Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Tomaten Binnen', completed:false},
