@@ -17,7 +17,7 @@ function showMonth(month) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const tasks = [
-    //Week 1
+    //Week 1 
     { date: '2025-01-01', description: 'Start Broccoli Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Paprika Binnen', completed:false},
     { date: '2025-01-01', description: 'Start Pepers Binnen', completed:false},
@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-01-01', description: 'Start Uienzaden Binnen', completed:false},
 
     //week 2
-    { date: '2025-01-06', description: 'Start Citroengras Binnen', completed:false},
+    { date: '2025-01-08', description: 'Start Citroengras Binnen', completed:false},
     //Week 3
-    { date: '2025-01-13', description: 'Start Broccoli Binnen', completed:false},
-    { date: '2025-01-13', description: 'Start Zomerprei Binnen', completed:false},
+    { date: '2025-01-15', description: 'Start Broccoli Binnen', completed:false},
+    { date: '2025-01-15', description: 'Start Zomerprei Binnen', completed:false},
 
     // Week 5
     { date: '2025-01-27', description: 'Start Broccoli Binnen', completed:false},
@@ -279,43 +279,48 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-10-27', description: 'Start Spinazie Binnen', completed:false}
   ];
 
+  
   const weekRows = document.querySelectorAll('.calendar tr[data-week-number]');
   const taskDetailsList = document.getElementById('task-details-list');
   const selectedWeekNumberElement = document.getElementById('selected-week-number');
 
-  // Helper function to calculate week number
-  function getWeekNumber(dateString) {
-    const date = new Date(dateString);
-    
-    // Get the first day of the year
-    const firstDayOfYear = new Date(date.getUTCFullYear(), 0, 1);
-    
-    // Calculate the day number (0-6, where 0 = Monday, 6 = Sunday)
-    const dayOfYear = Math.floor((date - firstDayOfYear) / (24 * 60 * 60 * 1000));
-    
-    // Calculate the week number based on the day of the year
-    const weekNumber = Math.ceil((dayOfYear + 1) / 7);
-    
-    // Adjust for first week of the year (should start from 1)
-    return weekNumber === 0 ? 1 : weekNumber;
+// Helper function to calculate ISO week number
+function getWeekNumber(date) {
+  const currentDate = new Date(date);
+
+  // Set the date to the first day of the year (January 1st)
+  const firstDayOfYear = new Date(currentDate.getFullYear(), 0, 1);
+
+  // Get the day of the week for the first day of the year (0 = Sunday, 1 = Monday, etc.)
+  const dayOfWeek = firstDayOfYear.getDay();
+
+  // Adjust the first day of the year to the closest Thursday (ISO 8601)
+  const firstThursday = new Date(currentDate.getFullYear(), 0, 4); // First Thursday of the year
+  firstThursday.setDate(4 - firstThursday.getDay() + (firstThursday.getDay() === 0 ? -6 : 1)); // Adjust to Thursday
+
+  // Calculate the difference in days between the current date and the first Thursday
+  const dayDifference = Math.floor((currentDate - firstThursday) / (24 * 60 * 60 * 1000));
+
+  // Now calculate the ISO week number
+  const weekNumber = Math.ceil((dayDifference + 1) / 7);
+
+  return weekNumber;
 }
-
-
 
 
   // Group tasks by week
   function groupTasksByWeek(tasks) {
     const taskWeekMap = {};
     tasks.forEach(task => {
-      const weekNumber = getWeekNumber(task.date);
-      if (!taskWeekMap[weekNumber]) {
-        taskWeekMap[weekNumber] = [];
-      }
-      taskWeekMap[weekNumber].push(task);
+        const weekNumber = getWeekNumber(task.date);  // Ensure this is correct
+        if (!taskWeekMap[weekNumber]) {
+            taskWeekMap[weekNumber] = [];
+        }
+        taskWeekMap[weekNumber].push(task);
     });
     return taskWeekMap;
-  }
-  
+}
+
   
 
   const tasksByWeek = groupTasksByWeek(tasks);
@@ -394,11 +399,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
 
-  
-  
-
-
-
   function toggleTaskCompletion(weekNumber, taskIndex, taskElement) {
     const task = tasksByWeek[weekNumber][taskIndex];
     task.completed = !task.completed; // Toggle completion status
@@ -431,3 +431,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize tasks
   loadTasksFromLocalStorage();
 });
+
+
