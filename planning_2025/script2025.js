@@ -171,11 +171,24 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-02-10', description: 'Start Pluksla Binnen', completed:false},
     { date: '2025-02-10', description: 'Start Spinazie Binnen', completed:false},
     { date: '2025-02-10', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-02-10', description: 'Start Koriander Binnen', completed: false},
 
     //week 8
     { date: '2025-02-17', description: 'Start Boerenkool Binnen', completed:false},
     { date: '2025-02-17', description: 'Start Pluksla Binnen', completed:false},
     { date: '2025-02-17', description: 'Start Spinazie Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Citroengras Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Afrikaantjes Binnen', completed: false},
+    { date: '2025-02-17', description: 'Start Calendula Binnen', completed: false},
+    { date: '2025-02-17', description: 'Start Leeuwenbek Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Viooltje Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Zinnia Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Koriander Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Basilicum Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Dille Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Peterselie Binnen', completed:false},
+    { date: '2025-02-17', description: 'Start Bieslook Binnen'},
+  
 
     //week 9
     { date: '2025-02-24', description: 'Start Broccoli Binnen', completed:false},
@@ -193,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-02-24', description: 'Start Pluksla Binnen', completed:false},
     { date: '2025-02-24', description: 'Start Spinazie Binnen', completed:false},
     { date: '2025-02-24', description: 'Start Spruitjes Binnen', completed:false},
+    { date: '2025-02-24', description: 'Start Koriander Binnen', completed: false },
     //week 10 
     { date: '2025-03-03', description: 'Start Pluksla Binnen', completed:false},
     { date: '2025-03-03', description: 'Start Spinazie Binnen', completed:false},
@@ -202,6 +216,17 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-03-03', description: 'Start Komkommer Binnen', completed:false},
     { date: '2025-03-03', description: 'Start Maïs Binnen', completed:false},
     { date: '2025-03-03', description: 'Start Meloenen Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Calendula Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Leeuwenbek Binnen', completed: false},
+    { date: '2025-03-03', description: 'Start Viooltje Binnen', completed: false},
+    { date: '2025-03-03', description: 'Start Koriander Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Basilicum Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Dille Binnen' completed: false},
+    { date: '2025-03-03', description: 'Start Peterselie Binnen', completed: false},
+    { date: '2025-03-03', description: 'Start Bieslook Binnen', completed:false},
+    { date: '2025-03-03', description: 'Start Tijm Binnen', completed:false},
+    { date: '2025-03-03', description: 'STart Radijs Buiten', completed: false},
+    { date: '2025-03-03', description: 'Start Honingmeloen Buiten', completed: false},
 //week 11
     { date: '2025-03-10', description: 'Start Broccoli Binnen', completed:false},
     { date: '2025-03-10', description: 'Start Winterprei Binnen', completed:false},
@@ -215,6 +240,11 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-03-10', description: 'Start Spinazie Binnen', completed:false},
     { date: '2025-03-10', description: 'Start Spruitjes Binnen', completed:false},
     { date: '2025-03-10', description: 'Start Bieten Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Citroengras Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Afrikaantje Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Zinnia Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Koriander Binnen', completed:false},
+    { date: '2025-03-10', description: 'Start Radijs Buiten', completed:false},
 //week 12
     { date: '2025-03-17', description: 'Start Pluksla Binnen', completed:false},
     { date: '2025-03-17', description: 'Start Spinazie Binnen', completed:false},
