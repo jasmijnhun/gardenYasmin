@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { date: '2025-03-03', description: 'Start Viooltje Binnen', completed: false},
     { date: '2025-03-03', description: 'Start Koriander Binnen', completed:false},
     { date: '2025-03-03', description: 'Start Basilicum Binnen', completed:false},
-    { date: '2025-03-03', description: 'Start Dille Binnen' completed: false},
+    { date: '2025-03-03', description: 'Start Dille Binnen', completed: false},
     { date: '2025-03-03', description: 'Start Peterselie Binnen', completed: false},
     { date: '2025-03-03', description: 'Start Bieslook Binnen', completed:false},
     { date: '2025-03-03', description: 'Start Tijm Binnen', completed:false},
